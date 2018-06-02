@@ -1,0 +1,22 @@
+.clint {
+	background: $lightblue;
+	h2 {
+		text-align: center;
+	}
+	.faceImg {
+		img {
+			max-width: 250px;
+			border: 3px solid lightgrey;
+			padding: 10px;
+			border-radius: 50%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	p {
+		padding: 30px 0;
+		margin: 0 auto;
+		width: 50%;
+		text-align: center;
+	}
+}

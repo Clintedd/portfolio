@@ -1,0 +1,27 @@
+@import 'setup';
+@import 'typography';
+@import 'utils';
+@import 'header';
+@import 'aboutme';
+@import 'skills';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+
+/*==========================
+GLOBAL STYLES
+==========================*/ 
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+	margin: 0;
+}
+
+
+/*==========================
+MEDIA QUERIES
+==========================*/

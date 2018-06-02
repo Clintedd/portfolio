@@ -1,0 +1,14 @@
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	.skills-item {
+		text-align: center;
+		padding: 40px;
+		margin: 0 auto;
+
+		.skills-icon {
+			font-size: 6rem;
+		}
+	}
+}

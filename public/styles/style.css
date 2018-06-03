@@ -193,23 +193,18 @@ header {
   .clint h2 {
     text-align: center;
     color: #fffbfc; }
-  .clint .faceImg-layer1 {
-    border: 6px dotted #62bbc1;
+  .clint .faceImg-layer1 .faceImg-layer2 {
+    border: 6px dotted lightgrey;
     border-radius: 50%;
-    max-width: 280px;
+    max-width: 270px;
     margin: 0 auto; }
-    .clint .faceImg-layer1 .faceImg-layer2 {
-      border: 6px dotted #ec058e;
+    .clint .faceImg-layer1 .faceImg-layer2 .faceImg img {
+      max-width: 250px;
+      border: 3px solid #ec058e;
+      padding: 10px;
       border-radius: 50%;
-      max-width: 270px;
+      display: block;
       margin: 0 auto; }
-      .clint .faceImg-layer1 .faceImg-layer2 .faceImg img {
-        max-width: 250px;
-        border: 3px solid lightgrey;
-        padding: 10px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto; }
   .clint p {
     padding: 30px 0;
     margin: 0 auto;

@@ -5,13 +5,9 @@
 		color: $white;
 	}
 	.faceImg-layer1 {
-		border: 6px dotted $teal; 
-		border-radius: 50%;
-		max-width: 280px;
-		margin: 0 auto;
 
 		.faceImg-layer2 {
-			border: 6px dotted $pink;
+			border: 6px dotted lightgrey;
 			border-radius: 50%;
 			max-width: 270px;
 			margin: 0 auto;
@@ -19,7 +15,7 @@
 			.faceImg {
 				img {
 					max-width: 250px;
-					border: 3px solid lightgrey;
+					border: 3px solid $pink;
 					padding: 10px;
 					border-radius: 50%;
 					display: block;

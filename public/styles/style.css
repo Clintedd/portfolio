@@ -182,28 +182,40 @@ header {
     header .hero-wrapper .hero-name {
       margin: 0 auto;
       width: 60%;
-      border: 10px solid #ba90e3;
+      border: 10px solid #ec058e;
       text-align: center; }
       header .hero-wrapper .hero-name h1 {
         text-align: center;
         margin: 0; }
 
 .clint {
-  background: #AFEEEE; }
+  background: #646464; }
   .clint h2 {
-    text-align: center; }
-  .clint .faceImg img {
-    max-width: 250px;
-    border: 3px solid lightgrey;
-    padding: 10px;
+    text-align: center;
+    color: #fffbfc; }
+  .clint .faceImg-layer1 {
+    border: 6px dotted #62bbc1;
     border-radius: 50%;
-    display: block;
+    max-width: 280px;
     margin: 0 auto; }
+    .clint .faceImg-layer1 .faceImg-layer2 {
+      border: 6px dotted #ec058e;
+      border-radius: 50%;
+      max-width: 270px;
+      margin: 0 auto; }
+      .clint .faceImg-layer1 .faceImg-layer2 .faceImg img {
+        max-width: 250px;
+        border: 3px solid lightgrey;
+        padding: 10px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto; }
   .clint p {
     padding: 30px 0;
     margin: 0 auto;
     width: 50%;
-    text-align: center; }
+    text-align: center;
+    color: #fffbfc; }
 
 .skills-container {
   display: -webkit-box;

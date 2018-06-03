@@ -1,22 +1,39 @@
 .clint {
-	background: $lightblue;
+	background: $grey;
 	h2 {
 		text-align: center;
+		color: $white;
 	}
-	.faceImg {
-		img {
-			max-width: 250px;
-			border: 3px solid lightgrey;
-			padding: 10px;
+	.faceImg-layer1 {
+		border: 6px dotted $teal; 
+		border-radius: 50%;
+		max-width: 280px;
+		margin: 0 auto;
+
+		.faceImg-layer2 {
+			border: 6px dotted $pink;
 			border-radius: 50%;
-			display: block;
+			max-width: 270px;
 			margin: 0 auto;
+
+			.faceImg {
+				img {
+					max-width: 250px;
+					border: 3px solid lightgrey;
+					padding: 10px;
+					border-radius: 50%;
+					display: block;
+					margin: 0 auto;
+				}
+			}
 		}
 	}
+	
 	p {
 		padding: 30px 0;
 		margin: 0 auto;
 		width: 50%;
 		text-align: center;
+		color: $white;
 	}
 }

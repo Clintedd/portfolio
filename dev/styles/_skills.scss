@@ -10,13 +10,23 @@
 	}
 
 	.skills-container {
-		display: flex;
-		flex-wrap: wrap;
+
+		.skills-container-top {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.skills-container-bottom {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 
 		.skills-item {
 			text-align: center;
 			padding: 40px;
-			margin: 0 auto;
+			// margin: 0 auto;
 
 			p {
 				color: white;

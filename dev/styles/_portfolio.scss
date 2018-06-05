@@ -7,9 +7,7 @@
     align-items: center;
 
     .portfolio-img {
-      width: 50%;
-      min-height: 100px;
-
+      min-width: 300px;
       
     }
     
@@ -33,4 +31,41 @@
     }
 
   }
+  .portfolio-container:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}
+
+@media (max-width: 1062px) {
+  .portfolio {
+
+  .portfolio-container:nth-child(odd), 
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .portfolio-img {
+      max-width: 300px;
+      
+    }
+    
+    .portfolio-text {
+      
+      h3 {
+        
+      }
+
+      .portfolio-skills {
+
+
+        p {
+          
+        }
+      }
+    }
+
+  }
+}
 }

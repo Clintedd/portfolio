@@ -12,6 +12,8 @@
 GLOBAL STYLES
 ==========================*/ 
 
+
+
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -26,18 +28,76 @@ h1, h2, h3, h4, h5, h6, a, p {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+
+}
+
 .subheader-container {
 	margin: 0 auto;
 	position: relative;
 	
 	h2 {
-		padding-top: 200px;
+		width: 350px;
+		border-bottom: 3px solid $pink;
+		padding-bottom: 20px;
+		padding-top: 100px;
+		margin-bottom: 50px;
 		color: $grey;
 		z-index: 10;
 		position: relative;
 	}
 }
 
+.portfolio-container {
+	
+	.portfolio-text {
+		.portfolio-about {
+			p {
+				display: inline-block;
+				width: 400px;
+			}
+			
+		}
+	}
+}
+
+// .portfolio-container:nth-child(odd) {
+// 	.portfolio-text {
+// 		.portfolio-about {
+// 			p {
+// 				text-align: right;
+// 				display: inline-block;
+// 				width: 400px;
+// 			}
+			
+// 		}
+// 	}
+// }
+
+
+
+
+
 /*==========================
 MEDIA QUERIES
 ==========================*/
+
+@media (max-width: 400px) {
+
+	html {
+		font-size: 50%;
+	}
+
+	.toggleMenu {
+		display: block;
+	}
+
+	.subheader-container {
+		h2 {
+			padding: 30px;
+		}
+	}
+}
+
+

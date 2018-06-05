@@ -9,12 +9,23 @@ header {
 		
 		
 		.top-menu-bar {
+			width: 85%;
+			margin: 0 auto;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			position: fixed;
+			background: white;
+			box-shadow: 1px 1px 1px 1px #ccc;
+			z-index: 20;
 
 			.logoContainer {
-				width: 7%;
+				width: 60px;
+				padding: 10px;
+			}
+
+			.toggleMenu {
+				display: none;
 			}
 			
 			ul {
@@ -26,21 +37,23 @@ header {
 					a {
 						text-decoration: none;
 						padding: 10px;
+						color: $black;
 					}
 				}
 			}
 		}
 
 		.logo-large {
-			width: 30%;
+			width: 40%;
 			position: absolute;
+			top: 20%;
+			opacity: 0.1;
 		}
 
 		.hero-name {
-			padding: 100px 0 0 400px;
+			padding: 100px 0 0 300px;
 			margin: 0 auto;
-			width: 80%;
-			padding-left: 400px;
+			width: 90%;
 
 			h2 {
 				color: $black;
@@ -48,9 +61,21 @@ header {
 
 			h1 {
 				margin: 0;
+				line-height: 1;
 				color: $black;
 			}
 		}
 
 	}
+}
+
+@media (max-width: 1000px) {
+	header .hero-wrapper .hero-name {
+		padding: 150px 0 0 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 790px) {
+	
 }

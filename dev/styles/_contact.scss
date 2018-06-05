@@ -1,24 +1,40 @@
 .contact {
-  background: linear-gradient(to bottom, white, $pink);
+  // background-image: url(../../assets/background-texture.jpg);
+  background-size: cover;
+  
 
-  .contact-left {
-    width: 50%;
-  }
+  .contact-container {
+    display: flex;
+    align-items: center;
 
-  .contact-right {
-    width: 50%;
-
-    input[type=text], 
-    input[type=email],
-    textarea {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
+    .contact-left {
+      width: 50%;
+      
+      .contact-image-container {
+        width: 70%;
+        margin: 0;
+        border: 3px solid grey;
+        border-radius: 5px;
+      }
+    }
+  
+    .contact-right {
+      width: 50%;
+  
+      input[type=text],
+      input[type=submit], 
+      input[type=email],
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
     }
   }
+
 
 }

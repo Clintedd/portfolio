@@ -28,10 +28,16 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
 
 //TypeIt javascript ends//
 
+app.smooth = function () {
+  $('a').smoothScroll();
+};
+
 app.init = function () {
-  app.headerHello();
-  app.headerName();
-  app.headerNameKo();
+  // app.headerHello();
+  // app.headerName();
+  // app.headerNameKo();
+  console.log('hi');
+  app.smooth();
 };
 
 $(function () {

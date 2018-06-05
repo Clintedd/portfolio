@@ -26,8 +26,14 @@
 				font-size: 6rem;
 				color: white;
 			}
-			.skills-icon:hover {
-				color: black;
+			
+			&:hover {
+				.skills-icon {
+					color: $pink;
+				}
+				p {
+					color: $pink;
+				}
 			}
 		}
 	}

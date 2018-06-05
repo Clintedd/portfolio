@@ -208,8 +208,11 @@ header {
       margin: 0 auto;
       width: 80%;
       padding-left: 400px; }
+      header .hero-wrapper .hero-name h2 {
+        color: #242722; }
       header .hero-wrapper .hero-name h1 {
-        margin: 0; }
+        margin: 0;
+        color: #242722; }
 
 .clint {
   height: 100vh;
@@ -251,8 +254,10 @@ header {
       .skills .skills-container .skills-item .skills-icon {
         font-size: 6rem;
         color: white; }
-      .skills .skills-container .skills-item .skills-icon:hover {
-        color: black; }
+      .skills .skills-container .skills-item:hover .skills-icon {
+        color: #dd0081; }
+      .skills .skills-container .skills-item:hover p {
+        color: #dd0081; }
 
 .portfolio .portfolio-container {
   display: -webkit-box;
@@ -282,7 +287,23 @@ header {
       color: #cadcff; }
 
 .contact {
-  background: #c4428e; }
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dd0081));
+  background: linear-gradient(to bottom, white, #dd0081); }
+  .contact .contact-left {
+    width: 50%; }
+  .contact .contact-right {
+    width: 50%; }
+    .contact .contact-right input[type=text],
+    .contact .contact-right input[type=email],
+    .contact .contact-right textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
 
 /*==========================
 GLOBAL STYLES
@@ -300,15 +321,12 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 .subheader-container {
   margin: 0 auto;
-  width: 30%;
   position: relative; }
   .subheader-container h2 {
-    padding-top: 30px;
-    text-align: center;
+    padding-top: 200px;
     color: #646464;
     z-index: 10;
-    position: relative;
-    padding: 40px 0; }
+    position: relative; }
 
 /*==========================
 MEDIA QUERIES

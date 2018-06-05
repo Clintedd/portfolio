@@ -42,8 +42,13 @@ header {
 			width: 80%;
 			padding-left: 400px;
 
+			h2 {
+				color: $black;
+			}
+
 			h1 {
 				margin: 0;
+				color: $black;
 			}
 		}
 

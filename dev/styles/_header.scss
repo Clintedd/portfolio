@@ -5,6 +5,7 @@ header {
 	.hero-wrapper {
 		width: 85%;
 		margin: 0 auto;
+		position: relative;
 		
 		
 		.top-menu-bar {
@@ -29,10 +30,17 @@ header {
 				}
 			}
 		}
+
+		.logo-large {
+			width: 30%;
+			position: absolute;
+		}
+
 		.hero-name {
-			padding-top: 100px;
+			padding: 100px 0 0 400px;
 			margin: 0 auto;
 			width: 80%;
+			padding-left: 400px;
 
 			h1 {
 				margin: 0;

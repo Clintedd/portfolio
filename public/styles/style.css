@@ -151,7 +151,10 @@ body {
 
 h1 {
   font-family: 'Sura', sans-serif;
-  font-size: 13rem; }
+  font-size: 10rem; }
+
+.hero-korean {
+  font-family: 'Gamja Flower'; }
 
 h2 {
   font-size: 6rem; }
@@ -174,7 +177,8 @@ header {
   height: 100vh; }
   header .hero-wrapper {
     width: 85%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     header .hero-wrapper .top-menu-bar {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -196,10 +200,14 @@ header {
           header .hero-wrapper .top-menu-bar ul li a {
             text-decoration: none;
             padding: 10px; }
+    header .hero-wrapper .logo-large {
+      width: 30%;
+      position: absolute; }
     header .hero-wrapper .hero-name {
-      padding-top: 100px;
+      padding: 100px 0 0 400px;
       margin: 0 auto;
-      width: 80%; }
+      width: 80%;
+      padding-left: 400px; }
       header .hero-wrapper .hero-name h1 {
         margin: 0; }
 

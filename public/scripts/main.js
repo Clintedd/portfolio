@@ -11,12 +11,19 @@ app.headerHello = new TypeIt('#typeHello', {
 });
 
 app.headerName = new TypeIt('#typeName', {
-  strings: ['Clint Lee', 'Web Developer', '웹 디자이너', 'Clint Lee'],
+  strings: ['Clint Lee', 'Web Developer'],
   speed: 150,
-  breakLines: false,
   deleteSpeed: 100,
   cursor: false,
   startDelay: 2000
+});
+
+app.headerNameKo = new TypeIt('#typeNameKo', {
+  strings: ['웹 프로그래머'],
+  speed: 230,
+  deleteSpeed: 100,
+  cursor: false,
+  startDelay: 4120
 });
 
 //TypeIt javascript ends//
@@ -24,6 +31,7 @@ app.headerName = new TypeIt('#typeName', {
 app.init = function () {
   app.headerHello();
   app.headerName();
+  app.headerNameKo();
 };
 
 $(function () {

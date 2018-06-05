@@ -169,12 +169,19 @@ h4 {
 a {
   font-size: 1.7rem; }
 
+.toggleMenu {
+  font-size: 5rem; }
+
 p {
   font-size: 2rem; }
 
 header {
   padding-top: 30px;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url(../../assets/laughing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right; }
   header .hero-wrapper {
     width: 85%;
     margin: 0 auto;
@@ -217,15 +224,15 @@ header {
       top: 20%;
       opacity: 0.1; }
     header .hero-wrapper .hero-name {
-      padding: 100px 0 0 300px;
+      padding: 100px 0 0 0px;
       margin: 0 auto;
       width: 90%; }
       header .hero-wrapper .hero-name h2 {
-        color: #242722; }
+        color: #fffbfc; }
       header .hero-wrapper .hero-name h1 {
         margin: 0;
-        line-height: 1;
-        color: #242722; }
+        line-height: 1.4;
+        color: #fffbfc; }
 
 @media (max-width: 1000px) {
   header .hero-wrapper .hero-name {
@@ -233,26 +240,21 @@ header {
     width: 100%; } }
 
 .clint {
-  height: 100vh;
-  background-image: url(../../assets/laughing.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right; }
+  height: 100vh; }
   .clint .about-me-divider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    text-align: center; }
     .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 {
       border-radius: 50%;
-      max-width: 270px;
+      max-width: 250px;
       margin: 0 auto; }
-      .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg {
-        border-radius: 5px; }
-        .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
-          margin: 0 auto; }
+      .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
+        border: 5px solid #59b0b5;
+        margin: 0 auto;
+        border-radius: 50%; }
+  .clint h4 {
+    padding: 15px 0; }
   .clint p {
-    padding: 30px 0;
-    color: #fffbfc; }
+    padding: 15px 0; }
 
 .skills {
   height: 100vh;
@@ -352,10 +354,10 @@ header {
       .contact .contact-container .contact-left .contact-image-container {
         width: 70%;
         margin: 0;
-        border: 3px solid grey;
         border-radius: 5px; }
     .contact .contact-container .contact-right {
-      width: 50%; }
+      width: 50%;
+      margin: 0 auto; }
       .contact .contact-container .contact-right input[type=text],
       .contact .contact-container .contact-right input[type=submit],
       .contact .contact-container .contact-right input[type=email],
@@ -364,7 +366,8 @@ header {
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
-        border: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         border-radius: 4px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box; }
@@ -394,7 +397,7 @@ a {
     border-bottom: 3px solid #dd0081;
     padding-bottom: 20px;
     padding-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #646464;
     z-index: 10;
     position: relative; }
@@ -406,10 +409,14 @@ a {
 /*==========================
 MEDIA QUERIES
 ==========================*/
-@media (max-width: 400px) {
+@media (max-width: 475px) {
   html {
     font-size: 50%; }
-  .toggleMenu {
+  header .hero-wrapper .top-menu-bar .toggleMenu {
     display: block; }
+  header .hero-wrapper .top-menu-bar nav {
+    display: none; }
+  header .hero-wrapper .top-menu-bar nav.open {
+    height: auto; }
   .subheader-container h2 {
     padding: 30px; } }

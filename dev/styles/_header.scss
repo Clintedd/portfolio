@@ -1,6 +1,10 @@
 header {
 	padding-top: 30px;
 	height: 100vh;
+	background-image: url(../../assets/laughing.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
 
 	.hero-wrapper {
 		width: 85%;
@@ -51,18 +55,18 @@ header {
 		}
 
 		.hero-name {
-			padding: 100px 0 0 300px;
+			padding: 100px 0 0 0px;
 			margin: 0 auto;
 			width: 90%;
 
 			h2 {
-				color: $black;
+				color: $white;
 			}
 
 			h1 {
 				margin: 0;
-				line-height: 1;
-				color: $black;
+				line-height: 1.4;
+				color: $white;
 			}
 		}
 

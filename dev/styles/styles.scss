@@ -42,7 +42,7 @@ a {
 		border-bottom: 3px solid $pink;
 		padding-bottom: 20px;
 		padding-top: 100px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		color: $grey;
 		z-index: 10;
 		position: relative;
@@ -83,14 +83,22 @@ a {
 MEDIA QUERIES
 ==========================*/
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
 
 	html {
 		font-size: 50%;
 	}
 
-	.toggleMenu {
+	header .hero-wrapper .top-menu-bar .toggleMenu {
 		display: block;
+	}
+
+	header .hero-wrapper .top-menu-bar nav {
+		display: none;
+	}
+
+	header .hero-wrapper .top-menu-bar nav.open {
+		height: auto;
 	}
 
 	.subheader-container {

@@ -29,7 +29,7 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
 
 app.menuToggle = () => {
   $('.toggleMenu').on('click', function() {
-    $('header ul').toggleClass('open');
+    $('header nav').toggleClass('open');
   })
 }
 

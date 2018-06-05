@@ -1,14 +1,35 @@
-.skills-container {
-	display: flex;
-	flex-wrap: wrap;
+.skills {
+	height: 100vh;
+	background:rgb(89, 176, 181);
 
-	.skills-item {
-		text-align: center;
-		padding: 40px;
-		margin: 0 auto;
+	.subheader-container {
 
-		.skills-icon {
-			font-size: 6rem;
+		h2 {
+			color: white;
+		}
+	}
+
+	.skills-container {
+		display: flex;
+		flex-wrap: wrap;
+
+		.skills-item {
+			text-align: center;
+			padding: 40px;
+			margin: 0 auto;
+
+			p {
+				color: white;
+			}
+
+			.skills-icon {
+				font-size: 6rem;
+				color: white;
+			}
+			.skills-icon:hover {
+				color: black;
+			}
 		}
 	}
 }
+

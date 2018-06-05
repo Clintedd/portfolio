@@ -17,13 +17,18 @@ GLOBAL STYLES
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+	display: block;
+}
+
 h1, h2, h3, h4, h5, h6, a, p {
 	margin: 0;
 }
 
 .subheader-container {
 	margin: 0 auto;
-	width: 20%;
+	width: 30%;
 	position: relative;
 	
 	h2 {
@@ -32,6 +37,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 		color: $grey;
 		z-index: 10;
 		position: relative;
+		padding: 40px 0;
 	}
 }
 

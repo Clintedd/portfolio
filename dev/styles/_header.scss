@@ -12,9 +12,10 @@ header {
 			align-items: center;
 			justify-content: space-between;
 
-			h3 {
-				margin: 0;
+			.logoContainer {
+				width: 7%;
 			}
+			
 			ul {
 				display: flex;
 	
@@ -31,11 +32,9 @@ header {
 		.hero-name {
 			padding-top: 100px;
 			margin: 0 auto;
-			width: 60%;
-			text-align: center;
+			width: 80%;
 
 			h1 {
-				text-align: center;
 				margin: 0;
 			}
 		}

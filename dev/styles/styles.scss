@@ -83,11 +83,35 @@ a {
 MEDIA QUERIES
 ==========================*/
 
-@media (max-width: 475px) {
-
-	html {
-		font-size: 50%;
+@media (max-width: 1000px) {
+	header .hero-wrapper .hero-name {
+		padding: 100px 0 0 60px;
+		width: 100%;
 	}
+}
+
+@media (max-width: 855px) {
+	header .hero-wrapper .hero-name {
+		padding: 0 0 0 60px;
+		width: 100%;
+	}
+}
+@media (max-width: 735px) {
+
+}
+
+@media (max-width: 705px) {
+	.wrapper,
+	header .hero-wrapper {
+		width: 95%;
+	}
+}
+
+@media (max-width: 475px) {
+	
+}
+
+@media (max-width: 475px) {
 
 	header .hero-wrapper .top-menu-bar .toggleMenu {
 		display: block;

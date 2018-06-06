@@ -18,7 +18,8 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			position: fixed;
+			position: sticky;
+			top: 0;
 			background: white;
 			box-shadow: 1px 1px 1px 1px #ccc;
 			z-index: 20;
@@ -58,6 +59,7 @@ header {
 			padding: 100px 0 0 0px;
 			margin: 0 auto;
 			width: 90%;
+			transition: all 0.5s;
 
 			h2 {
 				color: $white;
@@ -75,11 +77,8 @@ header {
 
 @media (max-width: 1000px) {
 	header .hero-wrapper .hero-name {
-		padding: 150px 0 0 0;
+		padding: 100px 0 0 60px;
 		width: 100%;
 	}
 }
 
-@media (max-width: 790px) {
-	
-}

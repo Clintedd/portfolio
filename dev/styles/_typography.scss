@@ -1,5 +1,6 @@
 html {
 	font-size: 62.5%;
+	transition: all 0.3s;
 }
 
 body {
@@ -37,9 +38,28 @@ a {
 }
 
 p {
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
-@media (max-width: 790px) {
-	
+@media (max-width: 855px) {
+	html {
+		font-size: 53%;
+	}
+}
+@media (max-width: 735px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media (max-width: 705px) {
+	html {
+		font-size: 48%;
+	}
+}
+
+@media (max-width: 475px) {
+	html {
+		font-size: 40%;
+	}
 }

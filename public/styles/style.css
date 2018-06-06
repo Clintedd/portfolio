@@ -144,7 +144,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
 
 body {
   font-family: 'Rajdhani', sans-serif; }
@@ -173,7 +175,23 @@ a {
   font-size: 5rem; }
 
 p {
-  font-size: 2rem; }
+  font-size: 3rem; }
+
+@media (max-width: 855px) {
+  html {
+    font-size: 53%; } }
+
+@media (max-width: 735px) {
+  html {
+    font-size: 50%; } }
+
+@media (max-width: 705px) {
+  html {
+    font-size: 48%; } }
+
+@media (max-width: 475px) {
+  html {
+    font-size: 40%; } }
 
 header {
   padding-top: 30px;
@@ -198,7 +216,9 @@ header {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      position: fixed;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
       background: white;
       -webkit-box-shadow: 1px 1px 1px 1px #ccc;
               box-shadow: 1px 1px 1px 1px #ccc;
@@ -226,7 +246,9 @@ header {
     header .hero-wrapper .hero-name {
       padding: 100px 0 0 0px;
       margin: 0 auto;
-      width: 90%; }
+      width: 90%;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
       header .hero-wrapper .hero-name h2 {
         color: #fffbfc; }
       header .hero-wrapper .hero-name h1 {
@@ -236,61 +258,51 @@ header {
 
 @media (max-width: 1000px) {
   header .hero-wrapper .hero-name {
-    padding: 150px 0 0 0;
+    padding: 100px 0 0 60px;
     width: 100%; } }
 
 .clint {
   height: 100vh; }
-  .clint .about-me-divider {
-    text-align: center; }
-    .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 {
-      border-radius: 50%;
-      max-width: 250px;
-      margin: 0 auto; }
-      .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
-        border: 5px solid #59b0b5;
-        margin: 0 auto;
-        border-radius: 50%; }
-  .clint h4 {
-    padding: 15px 0; }
-  .clint p {
-    padding: 15px 0; }
+  .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 {
+    border-radius: 50%;
+    max-width: 250px;
+    margin: 0 auto; }
+    .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
+      border: 5px solid #59b0b5;
+      margin: 0 auto;
+      border-radius: 50%; }
+  .clint .about-me-text {
+    margin: 0 auto;
+    width: 50%; }
+    .clint .about-me-text p {
+      padding: 50px 0; }
 
 .skills {
   height: 100vh;
   background: #59b0b5; }
   .skills .subheader-container h2 {
     color: white; }
-  .skills .skills-container .skills-container-top {
+  .skills .skills-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .skills .skills-container .skills-container-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .skills .skills-container .skills-item {
-    text-align: center;
-    padding: 40px; }
-    .skills .skills-container .skills-item p {
-      color: white; }
-    .skills .skills-container .skills-item .skills-icon {
-      font-size: 6rem;
-      color: white; }
-    .skills .skills-container .skills-item:hover .skills-icon {
-      color: #dd0081; }
-    .skills .skills-container .skills-item:hover p {
-      color: #dd0081; }
+        flex-wrap: wrap; }
+    .skills .skills-container .skills-item {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      text-align: center;
+      padding: 40px; }
+      .skills .skills-container .skills-item p {
+        color: white; }
+      .skills .skills-container .skills-item .skills-icon {
+        font-size: 6rem;
+        color: white; }
+      .skills .skills-container .skills-item:hover .skills-icon {
+        color: #dd0081; }
+      .skills .skills-container .skills-item:hover p {
+        color: #dd0081; }
 
 .portfolio .portfolio-container {
   display: -webkit-box;
@@ -410,9 +422,22 @@ a {
 /*==========================
 MEDIA QUERIES
 ==========================*/
+@media (max-width: 1000px) {
+  header .hero-wrapper .hero-name {
+    padding: 100px 0 0 60px;
+    width: 100%; } }
+
+@media (max-width: 855px) {
+  header .hero-wrapper .hero-name {
+    padding: 0 0 0 60px;
+    width: 100%; } }
+
+@media (max-width: 705px) {
+  .wrapper,
+  header .hero-wrapper {
+    width: 95%; } }
+
 @media (max-width: 475px) {
-  html {
-    font-size: 50%; }
   header .hero-wrapper .top-menu-bar .toggleMenu {
     display: block; }
   header .hero-wrapper .top-menu-bar nav {

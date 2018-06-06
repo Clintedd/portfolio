@@ -10,14 +10,15 @@
 	}
 
 	.skills-container {
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 
 
 		.skills-item {
-			flex: 1;
 			text-align: center;
-			padding: 40px;
+			width: calc(100% / 3);
+			// padding: 40px;
 			// margin: 0 auto;
 
 			p {

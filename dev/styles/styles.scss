@@ -33,12 +33,16 @@ a {
 
 }
 
+p {
+	line-height: 1.5;
+}
+
 .subheader-container {
-	margin: 0 auto;
+
 	position: relative;
+	width: 300px;
 	
 	h2 {
-		width: 350px;
 		border-bottom: 3px solid $pink;
 		padding-bottom: 20px;
 		padding-top: 100px;
@@ -92,7 +96,7 @@ MEDIA QUERIES
 
 @media (max-width: 855px) {
 	header .hero-wrapper .hero-name {
-		padding: 0 0 0 60px;
+		padding: 40px 0 0 60px;
 		width: 100%;
 	}
 }
@@ -108,10 +112,11 @@ MEDIA QUERIES
 }
 
 @media (max-width: 475px) {
-	
-}
 
-@media (max-width: 475px) {
+	header .hero-wrapper .hero-name {
+		padding: 70px 0 0 60px;
+		width: 100%;
+	}
 
 	header .hero-wrapper .top-menu-bar .toggleMenu {
 		display: block;

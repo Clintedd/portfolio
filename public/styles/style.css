@@ -224,7 +224,10 @@ p {
       .menu-bar .menu-container nav ul li {
         list-style: none; }
         .menu-bar .menu-container nav ul li a {
-          padding: 10px; }
+          font-size: 2rem;
+          padding: 10px;
+          font-weight: 600;
+          color: #59b0b5; }
 
 header {
   padding-top: 30px;
@@ -258,7 +261,7 @@ header {
     width: 100%; } }
 
 .clint {
-  padding: 50px 0;
+  padding: 100px 0;
   height: 100vh; }
   .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 {
     max-width: 250px;
@@ -276,7 +279,7 @@ header {
 .skills {
   height: 100vh;
   background: #59b0b5;
-  padding: 50px 0; }
+  padding: 100px 0; }
   .skills .subheader-container h2 {
     color: white; }
   .skills .skills-container {
@@ -301,7 +304,7 @@ header {
         color: #dd0081; }
 
 .portfolio {
-  padding: 50px 0; }
+  padding: 100px 0; }
   .portfolio .portfolio-container {
     width: 100%;
     display: -webkit-box;
@@ -383,7 +386,7 @@ header {
 
 .contact {
   background-size: cover;
-  padding: 50px 0; }
+  padding: 100px 0; }
   .contact .contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -480,14 +483,12 @@ p {
   line-height: 1.5; }
 
 .subheader-container {
-  width: 320px;
-  position: relative; }
+  width: 320px; }
   .subheader-container h2 {
     border-bottom: 3px solid #dd0081;
     margin-bottom: 20px;
     color: #646464;
-    z-index: 10;
-    position: relative; }
+    z-index: 10; }
 
 .portfolio-container .portfolio-text .portfolio-about p {
   display: inline-block;

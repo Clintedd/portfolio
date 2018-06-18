@@ -239,7 +239,7 @@ header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   header .hero-wrapper {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     position: relative; }
     header .hero-wrapper .hero-name {
@@ -247,7 +247,10 @@ header {
       margin: 0 auto;
       width: 100%;
       -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      color: #e0dfdc;
+      letter-spacing: .1em;
+      text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9); }
       header .hero-wrapper .hero-name h2 {
         color: #fffbfc; }
       header .hero-wrapper .hero-name h1 {
@@ -319,45 +322,51 @@ header {
             align-items: center;
     padding: 50px 0; }
     .portfolio .portfolio-container .portfolio-img {
-      min-width: 300px; }
-    .portfolio .portfolio-container .portfolio-text .portfolio-about {
-      width: 100%; }
-      .portfolio .portfolio-container .portfolio-text .portfolio-about p {
-        width: 300px; }
-    .portfolio .portfolio-container .portfolio-text .portfolio-skills {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin: 0 auto; }
-      .portfolio .portfolio-container .portfolio-text .portfolio-skills p {
-        font-size: 1.5rem;
-        background-color: #242722;
-        margin: 5px 5px;
-        border-radius: 3px;
-        padding: 5px 10px;
-        color: #59b0b5;
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
-    .portfolio .portfolio-container .portfolio-text .buttons {
-      margin: 20px 0;
-      padding: 20px 0; }
-      .portfolio .portfolio-container .portfolio-text .buttons a {
-        background-color: #dd0081;
-        color: #fffbfc;
-        font-size: 2rem;
-        margin: 10px;
-        padding: 10px 20px;
-        border-radius: 3px;
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
-        -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-        .portfolio .portfolio-container .portfolio-text .buttons a:hover {
-          color: #59b0b5;
-          -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-                  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      min-width: 300px;
+      max-width: 600px; }
+    .portfolio .portfolio-container .portfolio-text {
+      width: 50%; }
+      .portfolio .portfolio-container .portfolio-text h3 {
+        padding: 30px 0; }
+      .portfolio .portfolio-container .portfolio-text .portfolio-about {
+        width: 100%; }
+        .portfolio .portfolio-container .portfolio-text .portfolio-about p {
+          padding: 50px 0; }
+      .portfolio .portfolio-container .portfolio-text .portfolio-skills {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: 0 auto; }
+        .portfolio .portfolio-container .portfolio-text .portfolio-skills p {
+          font-size: 1.5rem;
+          background-color: #242722;
+          margin: 5px 5px;
+          border-radius: 3px;
+          padding: 5px 10px;
+          color: #fffbfc;
+          font-weight: 900;
+          -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+                  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
+      .portfolio .portfolio-container .portfolio-text .buttons {
+        margin: 20px 0;
+        padding: 20px 0; }
+        .portfolio .portfolio-container .portfolio-text .buttons a {
+          background-color: #dd0081;
+          color: #fffbfc;
+          font-size: 2rem;
+          margin: 10px;
+          padding: 10px 20px;
+          border-radius: 3px;
+          -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+                  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+          -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+          .portfolio .portfolio-container .portfolio-text .buttons a:hover {
+            color: #59b0b5;
+            -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .portfolio .portfolio-container:nth-child(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -466,7 +475,7 @@ footer {
 GLOBAL STYLES
 ==========================*/
 .wrapper {
-  width: 80%;
+  width: 75%;
   margin: 0 auto; }
 
 img {
@@ -489,10 +498,6 @@ p {
     margin-bottom: 20px;
     color: #646464;
     z-index: 10; }
-
-.portfolio-container .portfolio-text .portfolio-about p {
-  display: inline-block;
-  width: 400px; }
 
 /*==========================
 MEDIA QUERIES

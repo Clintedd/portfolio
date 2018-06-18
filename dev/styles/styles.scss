@@ -15,7 +15,7 @@ GLOBAL STYLES
 
 
 .wrapper {
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -45,19 +45,6 @@ p {
 		margin-bottom: 20px;
 		color: $grey;
 		z-index: 10;
-	}
-}
-
-.portfolio-container {
-	
-	.portfolio-text {
-		.portfolio-about {
-			p {
-				display: inline-block;
-				width: 400px;
-			}
-			
-		}
 	}
 }
 

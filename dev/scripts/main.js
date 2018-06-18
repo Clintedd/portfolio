@@ -3,6 +3,11 @@ const app = {};
 
 //TypeIt javascript starts//
 
+app.menuType = new TypeIt('#menuType', {
+  strings: ["Clint Lee", "Web Developer"],
+  breakLines: false
+})
+
 app.headerHello = new TypeIt('#typeHello', {
   strings: ["Hello! I'm"],
   speed: 150,
@@ -26,12 +31,6 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
 });
 
 //TypeIt javascript ends//
-
-app.menuToggle = () => {
-  $('.toggleMenu').on('click', function() {
-    $('header nav').toggleClass('open');
-  })
-}
 
 app.smoothScroll = () => {
   // Select all links with hashes

@@ -15,7 +15,7 @@ GLOBAL STYLES
 
 
 .wrapper {
-	width: 75%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -42,7 +42,8 @@ p {
 	
 	h2 {
 		border-bottom: 3px solid $pink;
-		margin-bottom: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
 		color: $grey;
 		z-index: 10;
 	}

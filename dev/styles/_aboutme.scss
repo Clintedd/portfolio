@@ -1,38 +1,37 @@
 .clint {
-	padding: 100px 0;
+	background-color: rgb(227, 235, 235);
+	padding: 70px 0;
 	height: 100vh;
 	
 	
 
 	.about-me-divider {
-		// display: flex;
+		display: flex;
 		
 
 		.faceImg-layer1 {
 	
 			.faceImg-layer2 {
-				max-width: 250px;
-				margin: 0 auto;
+				max-width: 500px;
 	
 				.faceImg {
 					img {
-						border:5px solid $teal;
 						margin: 0 auto;
-						border-radius: 50%;
+						box-shadow: 12px 12px 2px 1px $teal;
 					}
 				}
 			}
 		}
-	}
+		.about-me-text {
+			width: 80%;
+			p {
+				padding: 50px 0;
 
-	.about-me-text {
-		margin: 0 auto;
-		width: 80%;
-		p {
-			padding: 50px 0;
-
+			}
 		}
 	}
+
+
 	
 	
 }

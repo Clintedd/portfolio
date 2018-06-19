@@ -309,26 +309,38 @@ header {
     .skills .skills-container .skills-item {
       text-align: center;
       width: calc(100% / 3);
-      margin: 30px auto; }
+      margin: 30px auto;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
       .skills .skills-container .skills-item p {
         color: white; }
       .skills .skills-container .skills-item .skills-icon {
         font-size: 6rem;
         color: white; }
-      .skills .skills-container .skills-item:hover .skills-icon {
-        color: #dd0081; }
-      .skills .skills-container .skills-item:hover p {
-        color: #dd0081; }
+      .skills .skills-container .skills-item:hover {
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5); }
+        .skills .skills-container .skills-item:hover .skills-icon {
+          color: #dd0081; }
+        .skills .skills-container .skills-item:hover p {
+          color: #dd0081; }
 
 .portfolio {
   padding: 70px 0;
-  background-color: white; }
+  background-color: #fffbfc; }
   .portfolio .portfolio-wrapper {
     width: 100%;
     background: #fffbfc;
-    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    .portfolio .portfolio-wrapper:hover {
+      -webkit-transform: scale(1.12);
+              transform: scale(1.12);
+      -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+              box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
     .portfolio .portfolio-wrapper .portfolio-container {
       width: 80%;
       display: -webkit-box;
@@ -371,24 +383,30 @@ header {
             font-weight: 900;
             -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
                     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
+          .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-skills p:first-child {
+            margin-left: 0; }
         .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons {
           margin: 20px 0;
           padding: 20px 0; }
           .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a {
-            background-color: #dd0081;
+            background-color: #59b0b5;
             color: #fffbfc;
-            font-size: 2rem;
+            font-size: 2.4rem;
             margin: 10px;
             padding: 10px 20px;
             border-radius: 3px;
             -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
                     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
             -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            font-weight: 900; }
             .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a:hover {
-              color: #59b0b5;
+              background-color: #dd0081;
+              color: #fffbfc;
               -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+          .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a:first-child {
+            margin-left: 0; }
   .portfolio .portfolio-wrapper:nth-child(odd) {
     text-align: right; }
     .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container {

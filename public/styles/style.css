@@ -175,7 +175,7 @@ a {
   font-size: 5rem; }
 
 p {
-  font-size: 2.3rem; }
+  font-size: 2.9rem; }
 
 @media (max-width: 855px) {
   html {
@@ -228,6 +228,8 @@ p {
           padding: 10px;
           font-weight: 600;
           color: #59b0b5; }
+        .menu-bar .menu-container nav ul li a:last-child {
+          padding-right: 0px; }
 
 header {
   padding-top: 30px;
@@ -242,7 +244,7 @@ header {
     margin: 0 auto;
     position: relative; }
     header .hero-wrapper .hero-name {
-      padding: 100px 0 0 0px;
+      padding: 200px 0 0 0px;
       margin: 0 auto;
       width: 100%;
       -webkit-transition: all 0.5s;
@@ -277,7 +279,7 @@ header {
         -ms-flex-align: center;
             align-items: center; }
     .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 {
-      max-width: 500px; }
+      max-width: 450px; }
       .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
         margin: 0 auto;
         -webkit-box-shadow: 12px 12px 2px 1px #59b0b5;
@@ -298,7 +300,7 @@ header {
   background: #59b0b5;
   padding: 70px 0; }
   .skills .subheader-container h2 {
-    color: white; }
+    color: #fffbfc; }
   .skills .skills-container {
     width: 100%;
     display: -webkit-box;
@@ -308,24 +310,24 @@ header {
         flex-wrap: wrap; }
     .skills .skills-container .skills-item {
       text-align: center;
-      width: calc(100% / 3);
-      margin: 30px auto;
-      -webkit-transition: -webkit-transform 0.4s;
-      transition: -webkit-transform 0.4s;
-      transition: transform 0.4s;
-      transition: transform 0.4s, -webkit-transform 0.4s; }
+      width: calc(100% / 4);
+      margin: 50px auto;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+      .skills .skills-container .skills-item svg:hover {
+        fill: #DD0081; }
       .skills .skills-container .skills-item p {
-        color: white; }
+        color: #59b0b5;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
       .skills .skills-container .skills-item .skills-icon {
         font-size: 6rem;
-        color: white; }
-      .skills .skills-container .skills-item:hover {
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5); }
-        .skills .skills-container .skills-item:hover .skills-icon {
-          color: #dd0081; }
-        .skills .skills-container .skills-item:hover p {
-          color: #dd0081; }
+        color: #fffbfc; }
+      .skills .skills-container .skills-item:hover p {
+        color: #fffbfc; }
+      .skills .skills-container .skills-item .skills-svg {
+        width: 60px;
+        height: 60px; }
 
 .portfolio {
   padding: 70px 0;
@@ -418,6 +420,10 @@ header {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
+      .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-skills p:last-child {
+        margin-right: 0; }
+    .portfolio .portfolio-wrapper:nth-child(odd) .buttons a:last-child {
+      margin-right: 0; }
 
 @media (max-width: 1062px) {
   .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container {
@@ -568,12 +574,25 @@ MEDIA QUERIES
     padding: 40px 0 0 60px;
     width: 100%; }
   .skills {
-    height: auto; } }
+    height: auto; }
+    .skills .skills-container .skills-item .skills-svg {
+      width: 50px;
+      height: 50px; } }
+
+@media (max-width: 735px) {
+  .skills .skills-container .skills-item .skills-svg {
+    width: 48px;
+    height: 48px; } }
 
 @media (max-width: 705px) {
   .wrapper,
   header .hero-wrapper {
-    width: 95%; } }
+    width: 95%; }
+  .skills {
+    height: auto; }
+    .skills .skills-container .skills-item .skills-svg {
+      width: 46px;
+      height: 46px; } }
 
 @media (max-width: 475px) {
   header {
@@ -585,10 +604,11 @@ MEDIA QUERIES
     display: block; }
   header .hero-wrapper .top-menu-bar nav.open {
     height: auto; }
-  .skills {
-    padding: 50px 0; }
-    .skills .skills-item {
-      margin: 15px 0; }
+  .skills .skills-container .skills-item {
+    margin: 15px 0; }
+    .skills .skills-container .skills-item .skills-svg {
+      width: 32px;
+      height: 32px; }
   .portfolio-skills,
   .portfolio .portfolio-container:nth-child(odd) .portfolio-skills {
     -webkit-box-pack: center;

@@ -26,6 +26,9 @@
 					font-weight: 600;
 					color: $teal;
 				}
+				a:last-child {
+					padding-right: 0px;
+				}
 			}
 		}
 
@@ -49,7 +52,7 @@ header {
 		position: relative;
 
 		.hero-name {
-			padding: 100px 0 0 0px;
+			padding: 200px 0 0 0px;
 			margin: 0 auto;
 			width: 100%;
 			transition: all 0.5s;

@@ -6,7 +6,7 @@
 	.subheader-container {
 
 		h2 {
-			color: white;
+			color: $white;
 		}
 	}
 
@@ -18,29 +18,38 @@
 
 		.skills-item {
 			text-align: center;
-			width: calc(100% / 3);
-			margin: 30px auto; 
+			width: calc(100% / 4);
+			margin: 50px auto; 
 			// padding: 40px;
-			transition: transform 0.4s;
+			transition: all 0.4s;
+
+			svg:hover {
+				fill: #DD0081;
+			}
 
 			p {
-				color: white;
+				color: $teal;
+				transition: all 0.5s;
 			}
 
 			.skills-icon {
 				font-size: 6rem;
-				color: white;
+				color: $white;
 			}
 			
 			&:hover {
-				transform: scale(1.5);
-				.skills-icon {
-					color: $pink;
-				}
+
 				p {
-					color: $pink;
+					color: $white;
 				}
 			}
+
+			.skills-svg {
+				width: 60px;
+				height: 60px;
+				
+			}
+			
 		}
 	}
 }

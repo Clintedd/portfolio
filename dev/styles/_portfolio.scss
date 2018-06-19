@@ -104,6 +104,16 @@
    
     .portfolio-skills {
       justify-content: flex-end;
+      
+      p:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .buttons {
+      a:last-child {
+        margin-right: 0;
+      }
     }
   }
   

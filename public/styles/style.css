@@ -169,6 +169,8 @@ h4 {
   font-size: 4rem; }
 
 a {
+  letter-spacing: 0.17rem;
+  font-family: 'Archivo', sans-serif;
   font-size: 1.7rem; }
 
 .toggleMenu {
@@ -265,7 +267,7 @@ header {
     width: 100%; } }
 
 .clint {
-  background-color: #e3ebeb;
+  background: #fffbfc;
   padding: 70px 0;
   height: 100vh; }
   .clint .about-me-divider {
@@ -282,18 +284,38 @@ header {
       max-width: 450px; }
       .clint .about-me-divider .faceImg-layer1 .faceImg-layer2 .faceImg img {
         margin: 0 auto;
-        -webkit-box-shadow: 12px 12px 2px 1px #59b0b5;
-                box-shadow: 12px 12px 2px 1px #59b0b5;
+        -webkit-box-shadow: 9px 9px 2px 1px #59b0b5;
+                box-shadow: 9px 9px 2px 1px #59b0b5;
         border-radius: 5px; }
     .clint .about-me-divider .about-me-text {
-      width: 45%;
-      background-color: #fffbfc;
-      border-radius: 5px;
-      -webkit-box-shadow: 12px 12px 2px 1px #242722;
-              box-shadow: 12px 12px 2px 1px #242722; }
-      .clint .about-me-divider .about-me-text p {
-        font-size: 3rem;
-        padding: 15px 0 10px 25px; }
+      width: 50%; }
+      .clint .about-me-divider .about-me-text .about-me-paragraph {
+        background-color: #fffbfc;
+        border-radius: 5px;
+        -webkit-box-shadow: 9px 9px 2px 1px #242722;
+                box-shadow: 9px 9px 2px 1px #242722; }
+        .clint .about-me-divider .about-me-text .about-me-paragraph p {
+          font-size: 3rem;
+          padding: 15px 0 10px 25px; }
+      .clint .about-me-divider .about-me-text .about-me-resume a {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2.2rem;
+        display: inline-block;
+        padding: 15px 20px;
+        margin: 50px 0;
+        background: #242722;
+        color: #fffbfc;
+        font-weight: 900;
+        border-radius: 5px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
+      .clint .about-me-divider .about-me-text .about-me-resume a:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .skills {
   height: 100vh;
@@ -331,7 +353,9 @@ header {
 
 .portfolio {
   padding: 70px 0;
-  background-color: #fffbfc; }
+  background-color: #242722; }
+  .portfolio .subheader-container h2 {
+    color: #fffbfc; }
   .portfolio .portfolio-wrapper {
     width: 100%;
     background: #fffbfc;
@@ -395,7 +419,7 @@ header {
             color: #fffbfc;
             font-size: 2.4rem;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 15px 20px;
             border-radius: 3px;
             -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
                     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
@@ -545,6 +569,9 @@ img {
 
 h1, h2, h3, h4, h5, h6, a, p {
   margin: 0; }
+
+li {
+  list-style: none; }
 
 a {
   text-decoration: none; }

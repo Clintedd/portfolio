@@ -15,7 +15,7 @@ GLOBAL STYLES
 
 
 .wrapper {
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -145,6 +145,27 @@ MEDIA QUERIES
 		}
 	}
 }
+
+@media (max-width: 650px) {
+	.clint {
+		.about-me-divider {
+			flex-direction: column;
+
+			.about-me-text {
+				width: 100%;
+
+				.about-me-icons {
+					ul {
+						display: flex;
+						justify-content: center;
+					}
+				}
+				
+				.about-me-
+			}
+		}
+	}
+} 
 
 @media (max-width: 475px) {
 

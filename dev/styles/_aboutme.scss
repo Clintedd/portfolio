@@ -10,21 +10,16 @@
 		justify-content: space-between;
 		align-items: center;
 		
+		.about-me-img {
+			width: 30%;
+			min-width: 200px;
 
-		.faceImg-layer1 {
-	
-			.faceImg-layer2 {
-				max-width: 450px;
-	
-				.faceImg {
-					img {
-						margin: 0 auto;
-						box-shadow: 9px 9px 2px 1px $teal;
-						border-radius: 5px;
-					}
-				}
+			img {
+				box-shadow: 9px 9px 2px 1px $teal;
+				border-radius: 5px;
 			}
 		}
+
 		.about-me-text {
 			width: 50%;
 			
@@ -35,7 +30,6 @@
 				box-shadow: 9px 9px 2px 1px $black;
 
 				p {
-					font-size: 3rem;
 					padding: 15px 0 10px 25px;
 	
 	
@@ -49,7 +43,7 @@
 					font-size: 2.2rem;
 					display: inline-block;
 					padding: 15px 20px;
-					margin: 50px 0;
+					margin: 30px 0 0 0;
 					background: $black;
 					color: $white;
 					font-weight: 900;
@@ -59,8 +53,32 @@
 					
 				}
 				a:hover {
-					transform: scale(1.1);
+					transform: scale(1.19);
 					box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+					background-color: $teal;
+				}
+			}
+			.about-me-icons {
+				margin-top: 40px;
+				ul {
+					padding: 0;
+
+					li {
+						display: inline-block;
+						padding-right: 20px;
+						a {
+
+							i {
+								color: $black;
+								font-size: 4rem;
+								transition: all 0.5s;
+							}
+							i:hover {
+								transform: scale(1.5);
+								color: $teal;
+							}
+						}
+					}
 				}
 			}
 		}

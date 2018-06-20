@@ -68,7 +68,6 @@ app.smoothScroll = () => {
 
 app.init = function() {
   app.smoothScroll();
-  app.menuToggle();
 }
 
 $(function() {

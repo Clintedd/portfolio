@@ -1,7 +1,7 @@
 .skills {
 	height: 100vh;
 	background:rgb(89, 176, 181);
-	padding: 70px 0;
+	padding-top: 70px;
 
 	.subheader-container {
 
@@ -19,7 +19,7 @@
 		.skills-item {
 			text-align: center;
 			width: calc(100% / 4);
-			margin: 50px auto; 
+			margin: 35px auto; 
 			// padding: 40px;
 			transition: all 0.4s;
 

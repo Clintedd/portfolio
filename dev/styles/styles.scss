@@ -46,25 +46,15 @@ p {
 	
 	h2 {
 		border-bottom: 3px solid $pink;
-		padding-bottom: 20px;
 		margin-bottom: 30px;
 		color: $grey;
 		z-index: 10;
 	}
 }
 
-// .portfolio-container:nth-child(odd) {
-// 	.portfolio-text {
-// 		.portfolio-about {
-// 			p {
-// 				text-align: right;
-// 				display: inline-block;
-// 				width: 400px;
-// 			}
-			
-// 		}
-// 	}
-// }
+.hide {
+	display: none;
+}
 
 
 
@@ -148,20 +138,35 @@ MEDIA QUERIES
 
 @media (max-width: 650px) {
 	.clint {
+		height: auto;
+
 		.about-me-divider {
 			flex-direction: column;
 
+			.about-me-img {
+				margin-bottom: 30px;
+			}
+
 			.about-me-text {
-				width: 100%;
+				width: 90%;
 
 				.about-me-icons {
 					ul {
 						display: flex;
 						justify-content: center;
+
+						li {
+							padding: 0 10px;
+						}
 					}
 				}
+
+				.about-me-resume {
+					display: flex;
+					justify-content: center;
+				}
 				
-				.about-me-
+				
 			}
 		}
 	}
@@ -175,7 +180,7 @@ MEDIA QUERIES
 	}
 
 	header .hero-wrapper .hero-name {
-		padding: 70px 0 0 22px;
+		padding: 130px 0 0 22px;
 		width: 100%;
 	}
 
@@ -192,6 +197,7 @@ MEDIA QUERIES
 		.skills-container {
 
 			.skills-item {
+				width: calc(100% / 3);
 				margin: 15px 0;
 				
 				.skills-svg {
@@ -202,6 +208,10 @@ MEDIA QUERIES
 
 			
 		}
+	}
+
+	.portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
+		width: 100%;
 	}
 
 	.portfolio-skills,

@@ -168,9 +168,11 @@ h3 {
 h4 {
   font-size: 4rem; }
 
+h5 {
+  font-size: 2.5rem; }
+
 a {
   letter-spacing: 0.17rem;
-  font-family: 'Archivo', sans-serif;
   font-size: 1.7rem; }
 
 .toggleMenu {
@@ -290,10 +292,10 @@ header {
     .clint .about-me-divider .about-me-text {
       width: 50%; }
       .clint .about-me-divider .about-me-text .about-me-paragraph {
-        background-color: #fffbfc;
+        background-color: #F6EDE4;
         border-radius: 5px;
-        -webkit-box-shadow: 9px 9px 2px 1px #242722;
-                box-shadow: 9px 9px 2px 1px #242722; }
+        -webkit-box-shadow: 9px 9px 2px 1px #2a2828;
+                box-shadow: 9px 9px 2px 1px #2a2828; }
         .clint .about-me-divider .about-me-text .about-me-paragraph p {
           padding: 15px 0 10px 25px; }
       .clint .about-me-divider .about-me-text .about-me-resume a {
@@ -302,7 +304,7 @@ header {
         display: inline-block;
         padding: 15px 20px;
         margin: 30px 0 0 0;
-        background: #242722;
+        background: #2a2828;
         color: #fffbfc;
         font-weight: 900;
         border-radius: 5px;
@@ -324,7 +326,7 @@ header {
             display: inline-block;
             padding-right: 20px; }
             .clint .about-me-divider .about-me-text .about-me-icons ul li a i {
-              color: #242722;
+              color: #2a2828;
               font-size: 4rem;
               -webkit-transition: all 0.5s;
               transition: all 0.5s; }
@@ -336,7 +338,7 @@ header {
 .skills {
   height: 100vh;
   background: #59b0b5;
-  padding: 70px 0; }
+  padding-top: 70px; }
   .skills .subheader-container h2 {
     color: #fffbfc; }
   .skills .skills-container {
@@ -349,7 +351,7 @@ header {
     .skills .skills-container .skills-item {
       text-align: center;
       width: calc(100% / 4);
-      margin: 50px auto;
+      margin: 35px auto;
       -webkit-transition: all 0.4s;
       transition: all 0.4s; }
       .skills .skills-container .skills-item svg:hover {
@@ -369,7 +371,7 @@ header {
 
 .portfolio {
   padding: 70px 0;
-  background-color: #242722; }
+  background-color: #2a2828; }
   .portfolio .subheader-container h2 {
     color: #fffbfc; }
   .portfolio .portfolio-wrapper {
@@ -418,7 +420,7 @@ header {
           margin: 0 auto; }
           .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-skills p {
             font-size: 1.5rem;
-            background-color: #242722;
+            background-color: #2a2828;
             margin: 5px 10px 5px 0;
             border-radius: 3px;
             padding: 5px 10px;
@@ -478,14 +480,17 @@ header {
     .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container .portfolio-img,
     .portfolio .portfolio-wrapper .portfolio-container .portfolio-img {
       max-width: 300px; }
-    .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container .portfolio-text .portfolio-skills,
-    .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-skills {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+    .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container .portfolio-text,
+    .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
+      width: 80%; }
+      .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container .portfolio-text .portfolio-skills,
+      .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-skills {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
   .portfolio .portfolio-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -500,79 +505,94 @@ header {
   background-size: cover;
   padding: 70px 0; }
   .contact .contact-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .contact .contact-container .contact-left {
-      width: 50%;
-      padding-left: 100px; }
-      .contact .contact-container .contact-left a {
-        text-decoration: none;
-        font-size: 2.5rem;
-        color: #242722; }
-      .contact .contact-container .contact-left h5 {
-        font-size: 3rem; }
-      .contact .contact-container .contact-left .contact-image-container {
-        width: 70%;
-        margin: 0;
-        border-radius: 5px; }
-    .contact .contact-container .contact-right {
-      width: 50%;
-      margin: 0 auto; }
-      .contact .contact-container .contact-right input[type=text],
-      .contact .contact-container .contact-right input[type=email],
-      .contact .contact-container .contact-right textarea {
-        font-size: 2rem;
+    .contact .contact-container .contact-message {
+      font-size: 2rem; }
+      .contact .contact-container .contact-message form {
         width: 100%;
-        padding: 15px 0;
-        display: inline-block;
-        border: none;
-        border-bottom: 2px solid #dd0081; }
-      .contact .contact-container .contact-right input[type=submit] {
-        border: none;
-        font-size: 2rem;
-        width: 100%;
-        padding: 15px 0;
-        margin-top: 20px;
-        display: inline-block; }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .contact .contact-container .contact-message form .form-inputs {
+          width: calc((100% / 2) - 30px);
+          margin: 15px 0; }
+          .contact .contact-container .contact-message form .form-inputs input {
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px;
+            border: 2px solid #2a2828; }
+        .contact .contact-container .contact-message form .form-inputs:nth-of-type(3) {
+          width: 100%; }
+          .contact .contact-container .contact-message form .form-inputs:nth-of-type(3) textarea {
+            resize: none;
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px;
+            border: 2px solid #2a2828;
+            height: 30vh; }
+        .contact .contact-container .contact-message form .form-inputs:last-child {
+          margin: 0 auto;
+          width: 300px; }
 
 footer {
-  margin: 0 auto; }
-  footer .top-menu-bar {
-    width: 85%;
-    margin: 0 auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #59b0b5; }
+  footer .footer-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 20; }
-    footer .top-menu-bar .logoContainer {
-      width: 60px;
-      padding: 10px; }
-    footer .top-menu-bar .toggleMenu {
-      display: none; }
-    footer .top-menu-bar ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer .footer-icons ul {
+      padding: 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      footer .top-menu-bar ul li {
-        list-style: none; }
-        footer .top-menu-bar ul li a {
-          text-decoration: none;
-          padding: 10px;
-          color: #242722; }
+      footer .footer-icons ul li a {
+        padding: 10px; }
+        footer .footer-icons ul li a i {
+          font-size: 3rem;
+          color: #fffbfc; }
+      footer .footer-icons ul li a:hover i {
+        color: #dd0081; }
+  footer .contact-info {
+    text-align: center; }
+    footer .contact-info a {
+      color: #fffbfc; }
+  footer .footer-divider {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #fffbfc; }
+  footer .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  footer .copyright {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .copyright p {
+      color: #fffbfc;
+      display: block; }
 
 /*==========================
 GLOBAL STYLES
@@ -601,10 +621,12 @@ p {
   width: 320px; }
   .subheader-container h2 {
     border-bottom: 3px solid #dd0081;
-    padding-bottom: 20px;
     margin-bottom: 30px;
     color: #646464;
     z-index: 10; }
+
+.hide {
+  display: none; }
 
 /*==========================
 MEDIA QUERIES
@@ -640,36 +662,52 @@ MEDIA QUERIES
       height: 46px; } }
 
 @media (max-width: 650px) {
-  .clint .about-me-divider {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .clint .about-me-divider .about-me-text {
-      width: 100%; }
-      .clint .about-me-divider .about-me-text .about-me-icons ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
+  .clint {
+    height: auto; }
+    .clint .about-me-divider {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .clint .about-me-divider .about-me-img {
+        margin-bottom: 30px; }
+      .clint .about-me-divider .about-me-text {
+        width: 90%; }
+        .clint .about-me-divider .about-me-text .about-me-icons ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .clint .about-me-divider .about-me-text .about-me-icons ul li {
+            padding: 0 10px; }
+        .clint .about-me-divider .about-me-text .about-me-resume {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
 
 @media (max-width: 475px) {
   header {
     background-position: 80% 50%; }
   header .hero-wrapper .hero-name {
-    padding: 70px 0 0 22px;
+    padding: 130px 0 0 22px;
     width: 100%; }
   header .hero-wrapper .top-menu-bar .toggleMenu {
     display: block; }
   header .hero-wrapper .top-menu-bar nav.open {
     height: auto; }
   .skills .skills-container .skills-item {
+    width: calc(100% / 3);
     margin: 15px 0; }
     .skills .skills-container .skills-item .skills-svg {
       width: 32px;
       height: 32px; }
+  .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
+    width: 100%; }
   .portfolio-skills,
   .portfolio .portfolio-container:nth-child(odd) .portfolio-skills {
     -webkit-box-pack: center;

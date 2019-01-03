@@ -3,11 +3,6 @@ const app = {};
 
 //TypeIt javascript starts//
 
-app.headerHello = new TypeIt('#typeHello', {
-  strings: ["Hello! I'm"],
-  speed: 150,
-  cursor: false
-});
 
 app.headerName = new TypeIt('#typeName', {
   strings: ['Clint Lee', 'Web Developer'],

@@ -5,7 +5,7 @@ const app = {};
 
 
 app.headerName = new TypeIt('#typeName', {
-  strings: ['Clint Lee', 'Web Developer'],
+  strings: ['CLINT LEE', 'Web Developer'],
   speed: 150,
   deleteSpeed: 100,
   cursor: false,

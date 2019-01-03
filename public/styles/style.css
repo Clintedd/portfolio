@@ -155,8 +155,12 @@ h1 {
   font-family: 'Raleway Dots', cursive;
   font-size: 9rem; }
 
+@media (max-width: 475px) {
+  .hero-name {
+    text-align: center; } }
+
 .hero-korean {
-  font-family: 'Gamja Flower'; }
+  font-family: 'Nanum Gothic'; }
 
 h2 {
   font-size: 6rem; }
@@ -231,7 +235,7 @@ p {
           font-size: 2rem;
           padding: 10px;
           font-weight: 600;
-          color: #59b0b5; }
+          color: #454545; }
         .menu-bar .menu-container nav ul li a:last-child {
           padding-right: 0px; }
 
@@ -242,7 +246,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  background-attachment: fixed;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   header .hero-wrapper {
@@ -265,7 +268,6 @@ header {
 
 @media (max-width: 1000px) {
   header .hero-wrapper .hero-name {
-    padding: 100px 0 0 60px;
     width: 100%; } }
 
 .clint {

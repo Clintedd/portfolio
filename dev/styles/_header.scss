@@ -24,7 +24,7 @@
 					font-size: 2rem;
 					padding: 10px;
 					font-weight: 600;
-					color: $teal;
+					color: $fontgrey;
 				}
 				a:last-child {
 					padding-right: 0px;
@@ -44,7 +44,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	transition: all 0.5s;
 
 	.hero-wrapper {
@@ -85,7 +85,7 @@ header {
 			h1 {
 				margin: 0;
 				line-height: 1.4;
-				color: #454545;
+				color: $fontgrey;
 			}
 		}
 
@@ -94,7 +94,7 @@ header {
 
 @media (max-width: 1000px) {
 	header .hero-wrapper .hero-name {
-		padding: 100px 0 0 60px;
+		// padding: 100px 0 0 60px;
 		width: 100%;
 	}
 }

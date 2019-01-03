@@ -6,7 +6,7 @@ var app = {};
 
 
 app.headerName = new TypeIt('#typeName', {
-  strings: ['CLINT LEE', 'Web Developer'],
+  strings: ['CLINT LEE'],
   speed: 150,
   deleteSpeed: 100,
   cursor: false,
@@ -14,12 +14,16 @@ app.headerName = new TypeIt('#typeName', {
 });
 
 app.headerNameKo = new TypeIt('#typeNameKo', {
-  strings: ['웹 프로그래머'],
+  strings: ['Web Developer', '웹 프로그래머', 'DJ'],
   speed: 230,
   deleteSpeed: 100,
   cursor: false,
-  startDelay: 4120
+  breakLines: false,
+  startDelay: 4120,
+  loop: true
 });
+
+strings: ['웹 프로그래머', 'Web Developer'],
 
 //TypeIt javascript ends//
 

@@ -12,8 +12,14 @@ h1 {
 	font-size: 9rem;
 }
 
+.hero-name {
+	@media (max-width: 475px) {
+		text-align: center;
+	}
+}
+
 .hero-korean {
-	font-family: 'Gamja Flower';
+	font-family: 'Nanum Gothic';
 }
 
 h2 {

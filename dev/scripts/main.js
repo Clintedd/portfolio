@@ -13,7 +13,7 @@ app.headerName = new TypeIt('#typeName', {
 });
 
 app.headerNameKo = new TypeIt('#typeNameKo', {
-  strings: ['Web Developer', '웹 프로그래머', 'DJ'],
+  strings: ['Web Developer', '웹 프로그래머'],
   speed: 230,
   deleteSpeed: 100,
   cursor: false,
@@ -21,8 +21,6 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
   startDelay: 4120,
   loop: true
 });
-
-strings: ['웹 프로그래머', 'Web Developer'],
 
 //TypeIt javascript ends//
 
@@ -64,6 +62,7 @@ app.smoothScroll = () => {
       }
     });
 }
+
 
 app.init = function() {
   app.smoothScroll();

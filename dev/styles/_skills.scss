@@ -1,12 +1,12 @@
 .skills {
 	height: 100vh;
-	background:rgb(89, 176, 181);
+	background:$teal;
 	padding-top: 70px;
 
 	.subheader-container {
 
 		h2 {
-			color: $white;
+			color: $fontgrey;
 		}
 	}
 
@@ -34,13 +34,13 @@
 
 			.skills-icon {
 				font-size: 6rem;
-				color: $white;
+				color: $fontgrey;
 			}
 			
 			&:hover {
 
 				p {
-					color: $white;
+					color: $fontgrey;
 				}
 			}
 

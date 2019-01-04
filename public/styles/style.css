@@ -152,7 +152,6 @@ body {
   font-family: 'Rajdhani', sans-serif; }
 
 h1 {
-  font-family: 'Raleway Dots', cursive;
   font-size: 9rem; }
 
 @media (max-width: 475px) {
@@ -162,11 +161,13 @@ h1 {
 .hero-korean {
   font-family: 'Nanum Gothic'; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway Dots', cursive; }
+
 h2 {
   font-size: 6rem; }
 
 h3 {
-  font-family: 'Rajdhani', sans-serif;
   font-size: 5rem; }
 
 h4 {
@@ -183,7 +184,7 @@ a {
   font-size: 5rem; }
 
 p {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 @media (max-width: 855px) {
   html {
@@ -271,7 +272,6 @@ header {
     width: 100%; } }
 
 .clint {
-  background: #fffbfc;
   padding: 70px 0;
   height: 100vh; }
   .clint .about-me-divider {
@@ -288,8 +288,8 @@ header {
       width: 30%;
       min-width: 200px; }
       .clint .about-me-divider .about-me-img img {
-        -webkit-box-shadow: 9px 9px 2px 1px #59b0b5;
-                box-shadow: 9px 9px 2px 1px #59b0b5;
+        -webkit-box-shadow: 9px 9px 2px 1px #CEEDE8;
+                box-shadow: 9px 9px 2px 1px #CEEDE8;
         border-radius: 5px; }
     .clint .about-me-divider .about-me-text {
       width: 50%; }
@@ -319,7 +319,7 @@ header {
                 transform: scale(1.19);
         -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                 box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        background-color: #59b0b5; }
+        background-color: #CEEDE8; }
       .clint .about-me-divider .about-me-text .about-me-icons {
         margin-top: 40px; }
         .clint .about-me-divider .about-me-text .about-me-icons ul {
@@ -335,14 +335,14 @@ header {
             .clint .about-me-divider .about-me-text .about-me-icons ul li a i:hover {
               -webkit-transform: scale(1.5);
                       transform: scale(1.5);
-              color: #59b0b5; }
+              color: #CEEDE8; }
 
 .skills {
   height: 100vh;
-  background: #59b0b5;
+  background: #CEEDE8;
   padding-top: 70px; }
   .skills .subheader-container h2 {
-    color: #fffbfc; }
+    color: #454545; }
   .skills .skills-container {
     width: 100%;
     display: -webkit-box;
@@ -359,26 +359,24 @@ header {
       .skills .skills-container .skills-item svg:hover {
         fill: #DD0081; }
       .skills .skills-container .skills-item p {
-        color: #59b0b5;
+        color: #CEEDE8;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
       .skills .skills-container .skills-item .skills-icon {
         font-size: 6rem;
-        color: #fffbfc; }
+        color: #454545; }
       .skills .skills-container .skills-item:hover p {
-        color: #fffbfc; }
+        color: #454545; }
       .skills .skills-container .skills-item .skills-svg {
         width: 60px;
         height: 60px; }
 
 .portfolio {
-  padding: 70px 0;
-  background-color: #2a2828; }
+  padding: 70px 0; }
   .portfolio .subheader-container h2 {
-    color: #fffbfc; }
+    color: #454545; }
   .portfolio .portfolio-wrapper {
     width: 100%;
-    background: #fffbfc;
     border-radius: 10px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
@@ -434,7 +432,7 @@ header {
           margin: 20px 0;
           padding: 20px 0; }
           .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a {
-            background-color: #59b0b5;
+            background-color: #CEEDE8;
             color: #fffbfc;
             font-size: 2.4rem;
             margin: 10px;
@@ -446,7 +444,7 @@ header {
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             font-weight: 900; }
             .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a:hover {
-              background-color: #dd0081;
+              background-color: #FCC2C1;
               color: #fffbfc;
               -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
@@ -546,7 +544,7 @@ header {
 footer {
   margin: 0 auto;
   padding: 20px;
-  background-color: #59b0b5; }
+  background-color: #CEEDE8; }
   footer .footer-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,7 +563,7 @@ footer {
           font-size: 3rem;
           color: #fffbfc; }
       footer .footer-icons ul li a:hover i {
-        color: #dd0081; }
+        color: #FCC2C1; }
   footer .contact-info {
     text-align: center; }
     footer .contact-info a {
@@ -622,7 +620,7 @@ p {
 .subheader-container {
   width: 320px; }
   .subheader-container h2 {
-    border-bottom: 3px solid #dd0081;
+    border-bottom: 3px solid #FCC2C1;
     margin-bottom: 30px;
     color: #646464;
     z-index: 10; }

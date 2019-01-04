@@ -1,17 +1,15 @@
 .portfolio {
   padding: 70px 0;
-  background-color: $black;
 
   .subheader-container {
 
 		h2 {
-			color: $white;
+			color: $fontgrey;
 		}
 	}
 
   .portfolio-wrapper {
     width: 100%;
-    background: $white;
     border-radius: 10px;
     transition: all .5s ease-in-out;
 

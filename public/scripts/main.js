@@ -8,7 +8,6 @@ var app = {};
 app.headerName = new TypeIt('#typeName', {
   strings: ['Clint Lee'],
   speed: 150,
-  deleteSpeed: 100,
   cursor: false,
   startDelay: 2000
 });
@@ -19,7 +18,7 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
   deleteSpeed: 100,
   cursor: false,
   breakLines: false,
-  startDelay: 4120,
+  startDelay: 3000,
   loop: true
 });
 

@@ -149,7 +149,7 @@ html {
   transition: all 0.3s; }
 
 body {
-  font-family: 'Rajdhani', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 h1 {
   font-size: 9rem; }
@@ -184,7 +184,7 @@ a {
   font-size: 5rem; }
 
 p {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 @media (max-width: 855px) {
   html {
@@ -285,8 +285,7 @@ header {
         -ms-flex-align: center;
             align-items: center; }
     .clint .about-me-divider .about-me-img {
-      width: 40%;
-      min-width: 200px; }
+      width: 40%; }
       .clint .about-me-divider .about-me-img img {
         -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -385,11 +384,6 @@ header {
     border-radius: 10px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
-    .portfolio .portfolio-wrapper:hover {
-      -webkit-transform: scale(1.12);
-              transform: scale(1.12);
-      -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-              box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
     .portfolio .portfolio-wrapper .portfolio-container {
       width: 80%;
       display: -webkit-box;
@@ -438,11 +432,11 @@ header {
           padding: 20px 0; }
           .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons a {
             background-color: #CEEDE8;
-            color: #fffbfc;
+            color: #454545;
             font-size: 2.4rem;
             margin: 10px;
             padding: 15px 20px;
-            border-radius: 3px;
+            border-radius: 15px 0 15px 0;
             -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
                     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
             -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -566,17 +560,17 @@ footer {
         padding: 10px; }
         footer .footer-icons ul li a i {
           font-size: 3rem;
-          color: #fffbfc; }
+          color: #454545; }
       footer .footer-icons ul li a:hover i {
         color: #FCC2C1; }
   footer .contact-info {
     text-align: center; }
     footer .contact-info a {
-      color: #fffbfc; }
+      color: #454545; }
   footer .footer-divider {
     height: 1px;
     width: 100%;
-    border-bottom: 1px solid #fffbfc; }
+    border-bottom: 1px solid #454545; }
   footer .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -596,18 +590,18 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     footer .copyright p {
-      color: #fffbfc;
+      color: #454545;
       display: block; }
 
 /*==========================
 GLOBAL STYLES
 ==========================*/
 .wrapper {
-  width: 80%;
+  width: 85%;
   margin: 0 auto; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block; }
 
 h1, h2, h3, h4, h5, h6, a, p {

@@ -15,12 +15,12 @@ GLOBAL STYLES
 
 
 .wrapper {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -34,7 +34,6 @@ li {
 
 a {
 	text-decoration: none;
-
 }
 
 p {

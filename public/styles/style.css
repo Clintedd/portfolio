@@ -159,7 +159,8 @@ h1 {
     text-align: center; } }
 
 .hero-korean {
-  font-family: 'Nanum Gothic'; }
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway Dots', cursive; }
@@ -259,9 +260,10 @@ header {
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       color: #e0dfdc;
-      letter-spacing: .1em; }
+      letter-spacing: .1rem; }
       header .hero-wrapper .hero-name h2 {
-        color: #fffbfc; }
+        color: #454545;
+        font-size: 5rem; }
       header .hero-wrapper .hero-name h1 {
         margin: 0;
         line-height: 1.4;
@@ -343,7 +345,7 @@ header {
 
 .skills {
   height: 100vh;
-  background: #CEEDE8;
+  background: #f8f8f8;
   padding-top: 70px; }
   .skills .subheader-container h2 {
     color: #454545; }
@@ -363,7 +365,7 @@ header {
       .skills .skills-container .skills-item svg:hover {
         fill: #DD0081; }
       .skills .skills-container .skills-item p {
-        color: #CEEDE8;
+        color: #FCC2C1;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
       .skills .skills-container .skills-item .skills-icon {
@@ -402,7 +404,8 @@ header {
         min-width: 300px;
         max-width: 600px; }
       .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
-        width: 50%; }
+        width: 50%;
+        background-color: #f8f8f8; }
         .portfolio .portfolio-wrapper .portfolio-container .portfolio-text h3 {
           padding: 15px 0; }
         .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-about {

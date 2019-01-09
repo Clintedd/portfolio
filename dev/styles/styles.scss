@@ -94,20 +94,10 @@ MEDIA QUERIES
 	}
 }
 @media (max-width: 735px) {
-	.skills {
 
-		.skills-container {
-
-			.skills-item {
-				
-				.skills-svg {
-					width: 48px;
-					height: 48px;
-				}
-			}
-
-			
-		}
+	.skills-svg {
+		width: 48px;
+		height: 48px;
 	}
 }
 
@@ -119,18 +109,10 @@ MEDIA QUERIES
 
 	.skills {
 		height: auto;
-
-		.skills-container {
-
-			.skills-item {
 				
-				.skills-svg {
-					width: 46px;
-					height: 46px;
-				}
-			}
-
-			
+		.skills-svg {
+			width: 46px;
+			height: 46px;
 		}
 	}
 }
@@ -140,7 +122,7 @@ MEDIA QUERIES
 		height: auto;
 
 		.about-me-divider {
-			flex-direction: column;
+			flex-direction: column-reverse;
 
 			.about-me-img {
 				margin-bottom: 30px;
@@ -207,10 +189,6 @@ MEDIA QUERIES
 
 			
 		}
-	}
-
-	.portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
-		width: 100%;
 	}
 
 	.portfolio-skills,

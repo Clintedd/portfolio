@@ -13,7 +13,9 @@
 	.skills-container {
 		width: 100%;
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
+		align-items: space-between;
 
 
 		.skills-item {
@@ -28,7 +30,7 @@
 			}
 
 			p {
-				color: $pink;
+				color: $fontgrey;
 				transition: all 0.5s;
 			}
 
@@ -40,7 +42,7 @@
 			&:hover {
 
 				p {
-					color: $fontgrey;
+					color: $teal;
 				}
 			}
 

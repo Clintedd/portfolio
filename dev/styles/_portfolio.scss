@@ -20,17 +20,23 @@
       margin: 50px auto;
       align-items: center;
       padding: 50px 0;
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
       
 
       .portfolio-img {
-        width: 48%;
+        width: 40%;
         min-width: 300px;
         max-width: 600px;
       }
       
       .portfolio-text {
-        width: 50%;
+        width: 60%;
         background-color: #f8f8f8;
+        padding: 30px;
+        border-radius: 30px;
         
         h3 {
           // border-bottom: 2px solid $grey;
@@ -160,9 +166,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    
-
   }
 }
 }

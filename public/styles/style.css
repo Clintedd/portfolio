@@ -280,23 +280,33 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
     .clint .about-me-divider .about-me-img {
-      width: 40%; }
+      width: 30%;
+      min-width: 250px;
+      -webkit-clip-path: polygon(27% 0, 100% 0, 100% 75%, 73% 100%, 0 100%, 0% 25%);
+      clip-path: polygon(27% 0, 100% 0, 100% 75%, 73% 100%, 0 100%, 0% 25%);
+      position: relative;
+      z-index: -9; }
       .clint .about-me-divider .about-me-img img {
         -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
         border-radius: 5px;
-        opacity: 0.7;
         -webkit-transition: all 1s;
         transition: all 1s; }
-        .clint .about-me-divider .about-me-img img:hover {
-          opacity: 0.8; }
+    .clint .about-me-divider .about-me-img::before {
+      position: absolute;
+      content: '';
+      border: 2px solid #454545;
+      width: 100%;
+      height: 100%;
+      left: 8%;
+      bottom: -8%;
+      z-index: -10; }
     .clint .about-me-divider .about-me-text {
       width: 50%; }
       .clint .about-me-divider .about-me-text .about-me-paragraph {
@@ -306,33 +316,47 @@ header {
                 box-shadow: 9px 9px 2px 1px #2a2828; }
         .clint .about-me-divider .about-me-text .about-me-paragraph p {
           padding: 15px 0 10px 25px; }
-      .clint .about-me-divider .about-me-text .about-me-resume a {
-        font-family: 'Rajdhani', sans-serif;
-        font-size: 2.2rem;
-        display: inline-block;
-        padding: 15px 20px;
-        margin: 30px 0 0 0;
-        background: #2a2828;
-        color: #fffbfc;
-        font-weight: 900;
-        border-radius: 5px;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
-      .clint .about-me-divider .about-me-text .about-me-resume a:hover {
-        -webkit-transform: scale(1.19);
-                transform: scale(1.19);
-        -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        background-color: #CEEDE8; }
+      .clint .about-me-divider .about-me-text .about-me-resume {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .clint .about-me-divider .about-me-text .about-me-resume a {
+          font-family: 'Raleway Dots', sans-serif;
+          font-size: 2.2rem;
+          display: inline-block;
+          padding: 15px 20px;
+          margin: 30px 0 0 0;
+          background: #2a2828;
+          color: #fffbfc;
+          font-weight: 900;
+          border-radius: 5px;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+                  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
+        .clint .about-me-divider .about-me-text .about-me-resume a:hover {
+          -webkit-transform: scale(1.19);
+                  transform: scale(1.19);
+          -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          background-color: #CEEDE8;
+          color: #454545; }
       .clint .about-me-divider .about-me-text .about-me-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-top: 40px; }
         .clint .about-me-divider .about-me-text .about-me-icons ul {
           padding: 0; }
           .clint .about-me-divider .about-me-text .about-me-icons ul li {
             display: inline-block;
-            padding-right: 20px; }
+            padding-left: 20px; }
             .clint .about-me-divider .about-me-text .about-me-icons ul li a i {
               color: #2a2828;
               font-size: 4rem;
@@ -354,8 +378,15 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between; }
     .skills .skills-container .skills-item {
       text-align: center;
       width: calc(100% / 4);
@@ -365,14 +396,14 @@ header {
       .skills .skills-container .skills-item svg:hover {
         fill: #DD0081; }
       .skills .skills-container .skills-item p {
-        color: #FCC2C1;
+        color: #454545;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
       .skills .skills-container .skills-item .skills-icon {
         font-size: 6rem;
         color: #454545; }
       .skills .skills-container .skills-item:hover p {
-        color: #454545; }
+        color: #CEEDE8; }
       .skills .skills-container .skills-item .skills-svg {
         width: 60px;
         height: 60px; }
@@ -399,13 +430,18 @@ header {
           -ms-flex-align: center;
               align-items: center;
       padding: 50px 0; }
+      @media (max-width: 550px) {
+        .portfolio .portfolio-wrapper .portfolio-container {
+          width: 100%; } }
       .portfolio .portfolio-wrapper .portfolio-container .portfolio-img {
-        width: 48%;
+        width: 40%;
         min-width: 300px;
         max-width: 600px; }
       .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
-        width: 50%;
-        background-color: #f8f8f8; }
+        width: 60%;
+        background-color: #f8f8f8;
+        padding: 30px;
+        border-radius: 30px; }
         .portfolio .portfolio-wrapper .portfolio-container .portfolio-text h3 {
           padding: 15px 0; }
         .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .portfolio-about {
@@ -649,7 +685,7 @@ MEDIA QUERIES
       height: 50px; } }
 
 @media (max-width: 735px) {
-  .skills .skills-container .skills-item .skills-svg {
+  .skills-svg {
     width: 48px;
     height: 48px; } }
 
@@ -659,7 +695,7 @@ MEDIA QUERIES
     width: 95%; }
   .skills {
     height: auto; }
-    .skills .skills-container .skills-item .skills-svg {
+    .skills .skills-svg {
       width: 46px;
       height: 46px; } }
 
@@ -668,9 +704,9 @@ MEDIA QUERIES
     height: auto; }
     .clint .about-me-divider {
       -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
       .clint .about-me-divider .about-me-img {
         margin-bottom: 30px; }
       .clint .about-me-divider .about-me-text {
@@ -708,8 +744,6 @@ MEDIA QUERIES
     .skills .skills-container .skills-item .skills-svg {
       width: 32px;
       height: 32px; }
-  .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
-    width: 100%; }
   .portfolio-skills,
   .portfolio .portfolio-container:nth-child(odd) .portfolio-skills {
     -webkit-box-pack: center;

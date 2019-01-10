@@ -125,11 +125,11 @@ MEDIA QUERIES
 			flex-direction: column-reverse;
 
 			.about-me-img {
-				margin-bottom: 30px;
+				display: none;
 			}
 
 			.about-me-text {
-				width: 90%;
+				width: 100%;
 
 				.about-me-icons {
 					ul {

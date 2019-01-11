@@ -12,17 +12,17 @@
 
 	.skills-container {
 		width: 100%;
+		height: 75vh;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: space-between;
+		justify-content: space-around;
+		align-content: space-around;
 
 
 		.skills-item {
 			text-align: center;
-			width: calc(100% / 4);
-			margin: 35px auto; 
-			// padding: 40px;
+			flex: 1 0 33%;
 			transition: all 0.4s;
 
 			svg:hover {
@@ -30,14 +30,55 @@
 			}
 
 			p {
+				padding-top: 20px;
 				color: $fontgrey;
 				transition: all 0.5s;
+				font-weight: 600;
 			}
 
 			.skills-icon {
 				font-size: 6rem;
 				color: $fontgrey;
+				transition: all 0.2s;
+
 			}
+
+			.devicon-react-original:hover {
+				color: #61DBFB;
+			}
+
+			.devicon-html5-plain:hover {
+				color: #DC4D25;
+			}
+
+			.devicon-css3-plain:hover {
+				color: #31a4d5;
+			}
+
+			.devicon-sass-original:hover {
+				color: #cf649a;
+			}
+
+			.devicon-javascript-plain:hover {
+				color: #E9B820;
+			}
+
+			.devicon-jquery-plain:hover {
+				color: #0865a7;
+			}
+
+			.devicon-gulp-plain:hover {
+				color: #D94E5B;
+			}
+
+			.devicon-git-plain:hover {
+				color: #F05133;
+			}
+
+			.devicon-github-plain:hover {
+				color: #030104;
+			}
+
 			
 			&:hover {
 
@@ -47,11 +88,15 @@
 			}
 
 			.skills-svg {
+				margin:0 auto;
 				width: 60px;
 				height: 60px;
 				
 			}
-			
+
+			.firebase-active {
+				color: grey;
+			}
 		}
 	}
 }

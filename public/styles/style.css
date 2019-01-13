@@ -459,6 +459,38 @@ header {
         width: 60px;
         height: 60px; }
 
+.firebase-active:hover path.largest-shape,
+.firebase-active:hover path.bottom-line {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #FCCA3F; }
+
+.firebase-active:hover use.top-shape,
+.firebase-active:hover use.topleft-shape {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #FFA712; }
+
+.firebase-active:hover polygon.middle-triangle {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #F6820C; }
+
+.premiere-active:hover path.st1 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #C35FD2; }
+
+.premiere-active:hover path.st0 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #270D32; }
+
+.aftereffects-active:hover path.st1 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #8F88D6; }
+
 .portfolio {
   padding: 70px 0; }
   .portfolio .subheader-container h2 {

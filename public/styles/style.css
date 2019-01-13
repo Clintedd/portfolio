@@ -363,8 +363,6 @@ header {
           -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
                   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); }
         .clint .about-me-divider .about-me-text .about-me-resume a:hover {
-          -webkit-transform: scale(1.19);
-                  transform: scale(1.19);
           -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           background-color: #CEEDE8;
@@ -481,11 +479,6 @@ header {
   transition: all 0.5s ease-in-out;
   fill: #C35FD2; }
 
-.premiere-active:hover path.st0 {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  fill: #270D32; }
-
 .aftereffects-active:hover path.st1 {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -518,8 +511,7 @@ header {
           width: 100%; } }
       .portfolio .portfolio-wrapper .portfolio-container .portfolio-img {
         width: 40%;
-        min-width: 300px;
-        max-width: 600px; }
+        min-width: 400px; }
       .portfolio .portfolio-wrapper .portfolio-container .portfolio-text {
         width: 60%;
         padding: 30px;
@@ -557,7 +549,13 @@ header {
                   justify-content: flex-start;
           -ms-flex-line-pack: center;
               align-content: center; }
-          @media (max-width: 1062px) {
+          .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons-right {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; }
+            .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons-right a:last-child {
+              margin-right: 0; }
+          @media (max-width: 1362px) {
             .portfolio .portfolio-wrapper .portfolio-container .portfolio-text .buttons {
               -webkit-box-pack: center;
                   -ms-flex-pack: center;
@@ -604,7 +602,7 @@ header {
         .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container .portfolio-text .portfolio-skills p {
           margin: 5px 0 5px 10px; }
 
-@media (max-width: 1062px) {
+@media (max-width: 1362px) {
   .portfolio .portfolio-wrapper:nth-child(odd) .portfolio-container,
   .portfolio .portfolio-wrapper .portfolio-container {
     display: -webkit-box;

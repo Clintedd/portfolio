@@ -28,8 +28,8 @@
 
       .portfolio-img {
         width: 40%;
-        min-width: 300px;
-        max-width: 600px;
+        min-width: 400px;
+        // max-width: 600px;
       }
       
       .portfolio-text {
@@ -74,7 +74,15 @@
           justify-content: flex-start;
           align-content: center;
 
-          @media (max-width: 1062px) {
+          &-right {
+            justify-content: flex-end;
+
+            a:last-child {
+              margin-right:0;
+            }
+          }
+
+          @media (max-width: 1362px) {
             justify-content: center;
           }
 
@@ -106,7 +114,6 @@
               margin: 10px;
             }
           }
-
         }
       }
 
@@ -126,12 +133,6 @@
             margin:  5px 0 5px 10px;
           }
         }
-
-        .buttons {
-          a:last-child {
-            // margin-right: 0;
-          }
-        }
       }
     }
 
@@ -142,7 +143,7 @@
   
 }
 
-@media (max-width: 1062px) {
+@media (max-width: 1362px) {
   .portfolio {
 
   .portfolio-wrapper:nth-child(odd),

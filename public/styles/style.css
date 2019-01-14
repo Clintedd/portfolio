@@ -163,7 +163,7 @@ h1 {
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway Dots', cursive; }
+  font-family: 'Raleway', sans-serif; }
 
 h2 {
   font-size: 6rem; }
@@ -246,10 +246,10 @@ header {
   background-repeat: no-repeat;
   background-position: right;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  position: relative; }
   header .hero-wrapper {
-    margin: 0 auto;
-    position: relative; }
+    margin: 0 auto; }
     header .hero-wrapper .hero-name {
       padding: 200px 0 0 0px;
       margin: 0 auto;
@@ -265,6 +265,35 @@ header {
         margin: 0;
         line-height: 1.4;
         color: #454545; }
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75px;
+  height: 65px; }
+
+.arrows:hover .arrow-all {
+  fill: #FFF;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out; }
+  .arrows:hover .arrow-all.arrow-bottom {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px); }
+  .arrows:hover .arrow-all.arrow-top {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px); }
+
+.arrow-all {
+  fill: #FFF;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out; }
+  .arrow-all.arrow-middle {
+    opacity: 0.75; }
+  .arrow-all.arrow-top {
+    opacity: 0.5; }
 
 @media (max-width: 1000px) {
   header .hero-wrapper .hero-name {
@@ -329,7 +358,7 @@ header {
       border-radius: 5px;
       display: block;
       width: 100%;
-      height: 89%;
+      height: 90%;
       left: 7%;
       top: 15%;
       z-index: -99; }

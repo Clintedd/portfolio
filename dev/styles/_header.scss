@@ -41,12 +41,11 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
-	// background-attachment: fixed;
 	transition: all 0.5s;
+	position: relative;
 
 	.hero-wrapper {
 		margin: 0 auto;
-		position: relative;
 
 		.hero-name {
 			padding: 200px 0 0 0px;
@@ -70,6 +69,53 @@ header {
 
 	}
 }
+
+.arrow {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: translate(-50%, -50%);
+	width: 75px;
+	height: 65px;
+}
+
+.arrows {
+	
+	&:hover {
+    
+    .arrow-all {
+      fill: #FFF;
+      transition: all .4s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+      
+    }
+  
+  }
+}
+
+.arrow-all {
+  fill: #FFF;
+  transition: all .4s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
+}
+
+
+
 
 @media (max-width: 1000px) {
 	header .hero-wrapper .hero-name {

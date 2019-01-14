@@ -1,9 +1,9 @@
 .menu-bar {
-	background: $white;
+	background: #fff;
 	width: 100%;
 	position: fixed;
 	z-index: 30;
-	box-shadow: 2px 2px 2px 1px #ccc;
+	// box-shadow: 2px 2px 2px 1px #ccc;
 
 	.menu-container {
 		display: flex;

@@ -162,7 +162,7 @@ h1 {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Raleway', sans-serif; }
 
 h2 {
@@ -208,12 +208,10 @@ p {
     font-size: 3rem; } }
 
 .menu-bar {
-  background: #fffbfc;
+  background: #fff;
   width: 100%;
   position: fixed;
-  z-index: 30;
-  -webkit-box-shadow: 2px 2px 2px 1px #ccc;
-          box-shadow: 2px 2px 2px 1px #ccc; }
+  z-index: 30; }
   .menu-bar .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -378,15 +376,14 @@ header {
             -ms-flex-pack: center;
                 justify-content: center; }
         .clint .about-me-divider .about-me-text .about-me-resume a {
-          font-family: 'Raleway Dots', sans-serif;
           font-size: 2.2rem;
           display: inline-block;
           padding: 15px 20px;
           margin: 30px 0 0 0;
-          background: #2a2828;
+          background: #454545;
           color: #fffbfc;
           font-weight: 900;
-          border-radius: 5px;
+          border-radius: 15px 0 15px 0;
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
           -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
@@ -394,8 +391,7 @@ header {
         .clint .about-me-divider .about-me-text .about-me-resume a:hover {
           -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          background-color: #CEEDE8;
-          color: #454545; }
+          color: #fffbfc; }
       .clint .about-me-divider .about-me-text .about-me-icons {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -410,14 +406,16 @@ header {
             display: inline-block;
             padding: 0 10px; }
             .clint .about-me-divider .about-me-text .about-me-icons ul li a i {
-              color: #2a2828;
+              color: #454545;
               font-size: 4rem;
               -webkit-transition: all 0.5s;
               transition: all 0.5s; }
             .clint .about-me-divider .about-me-text .about-me-icons ul li a i:hover {
               -webkit-transform: scale(1.5);
-                      transform: scale(1.5);
-              color: #CEEDE8; }
+                      transform: scale(1.5); }
+
+.react-native {
+  color: #5ED4F4; }
 
 .skills {
   height: 100vh;
@@ -479,8 +477,6 @@ header {
         color: #F05133; }
       .skills .skills-container .skills-item .devicon-github-plain:hover {
         color: #030104; }
-      .skills .skills-container .skills-item:hover p {
-        color: #CEEDE8; }
       .skills .skills-container .skills-item .skills-svg {
         margin: 0 auto;
         width: 60px;
@@ -667,7 +663,13 @@ header {
     text-align: center; } }
 
 .contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.8))), url("../../assets/contact-background.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%), url("../../assets/contact-background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
   padding: 70px 0; }
   .contact .contact-container {
     -webkit-box-align: center;
@@ -676,7 +678,8 @@ header {
     .contact .contact-container .contact-message {
       font-size: 2rem; }
       .contact .contact-container .contact-message form {
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -689,27 +692,43 @@ header {
           width: calc((100% / 2) - 30px);
           margin: 15px 0; }
           .contact .contact-container .contact-message form .form-inputs input {
+            background-color: transparent;
             width: 100%;
-            border-radius: 10px;
             padding: 15px;
-            border: 2px solid #2a2828; }
+            border: 3px solid transparent;
+            border-bottom: 1px solid #454545; }
         .contact .contact-container .contact-message form .form-inputs:nth-of-type(3) {
           width: 100%; }
           .contact .contact-container .contact-message form .form-inputs:nth-of-type(3) textarea {
+            background-color: transparent;
             resize: none;
             width: 100%;
-            border-radius: 10px;
             padding: 15px;
-            border: 2px solid #2a2828;
+            border: 3px solid transparent;
+            border-bottom: 1px solid #454545;
             height: 30vh; }
         .contact .contact-container .contact-message form .form-inputs:last-child {
           margin: 0 auto;
-          width: 300px; }
+          width: 180px; }
+
+input[type=submit] {
+  margin-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+input:focus, textarea:focus {
+  text-decoration: none;
+  outline: none; }
 
 footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.5))), url("../../assets/footer-background.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.5) 100%), url("../../assets/footer-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #CEEDE8; }
+  padding: 20px; }
   footer .footer-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -731,8 +750,9 @@ footer {
         color: #FCC2C1; }
   footer .contact-info {
     text-align: center; }
-    footer .contact-info a {
-      color: #454545; }
+    footer .contact-info p {
+      color: #454545;
+      letter-spacing: 1px; }
   footer .footer-divider {
     height: 1px;
     width: 100%;
@@ -756,14 +776,15 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     footer .copyright p {
+      font-size: 1.4rem;
       color: #454545;
-      display: block; }
+      letter-spacing: 0.1px; }
 
 /*==========================
 GLOBAL STYLES
 ==========================*/
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto; }
 
 img {
@@ -782,13 +803,12 @@ a {
 p {
   line-height: 1.5; }
 
-.subheader-container {
-  width: 320px; }
-  .subheader-container h2 {
-    border-bottom: 3px solid #FCC2C1;
-    margin-bottom: 30px;
-    color: #646464;
-    z-index: 10; }
+.subheader-container h2 {
+  border-left: 3px solid #CEEDE8;
+  margin-bottom: 30px;
+  color: #454545;
+  z-index: 10;
+  padding-left: 40px; }
 
 .hide {
   display: none; }

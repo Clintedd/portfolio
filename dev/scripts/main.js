@@ -5,7 +5,7 @@ const app = {};
 
 
 app.headerName = new TypeIt('#typeName', {
-  strings: ['CLINT LEE'],
+  strings: ['CLINT'],
   speed: 150,
   cursor: false,
   startDelay: 2000,
@@ -62,11 +62,11 @@ app.smoothScroll = () => {
     });
 }
 
-
 app.init = function() {
   app.smoothScroll();
 }
 
 $(function() {
+  AOS.init();
   app.init();
 })

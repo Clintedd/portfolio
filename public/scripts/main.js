@@ -6,7 +6,7 @@ var app = {};
 
 
 app.headerName = new TypeIt('#typeName', {
-  strings: ['CLINT LEE'],
+  strings: ['CLINT'],
   speed: 150,
   cursor: false,
   startDelay: 2000
@@ -63,5 +63,6 @@ app.init = function () {
 };
 
 $(function () {
+  AOS.init();
   app.init();
 });

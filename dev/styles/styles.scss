@@ -15,7 +15,7 @@ GLOBAL STYLES
 
 
 .wrapper {
-	width: 85%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -41,13 +41,13 @@ p {
 }
 
 .subheader-container {
-	width: 320px;
 	
 	h2 {
-		border-bottom: 3px solid $pink;
+		border-left: 3px solid $teal;
 		margin-bottom: 30px;
-		color: $grey;
+		color: $fontgrey;
 		z-index: 10;
+		padding-left: 40px;
 	}
 }
 

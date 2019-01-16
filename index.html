@@ -19,7 +19,7 @@
 			<div class="logo-container">
 				<img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="50" src="assets/clintLeeLogo.png" alt="">
 			</div>
-			<nav>
+			<nav class="main-nav">
 				<ul data-aos="fade-down" data-aos-duration="1500" data-aos-delay="50">
 					<li>
 						<a class= "button-animation" href="#home">Home</a>
@@ -38,6 +38,9 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="hamburger-icon">
+				<div class="hamburger"></div>
+			</div>
 		</div>
 	</div>
 	<header data-aos="fade-down" data-aos-duration="1500" data-aos-delay="50">
@@ -72,8 +75,7 @@
 							users. I recently graduated from a highly selective Web Development immersive program at HackerYou College of Technology,
 							and I am currently expanding my coding skills with <span class="react-native">React Native</span>.</p>
 							<p>Code meets music, that is who I am. I love creating music and singing along with my acoustic guitar. When I'm not coding,
-							you will find me DJing, flying my drone to create beautiful sceneries, making beats on the computer, singing Sunday Morning by Maroon5, or image training snowboard tricks for the winter (Canadian Winter👍).</p>
-
+							you will find me DJing, flying my drone to create beautiful landscape videos, making beats on the computer, singing Sunday Morning by Maroon5 or image training snowboard tricks for the winter season. Canadian Winter👍</p>
 						</div>
 						<div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50" class="about-me-icons">
 							<ul>
@@ -341,20 +343,24 @@
 				<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="50" class="subheader-container">
 					<h2>CONTACT</h2>
 				</div>
+				<div class="contact-employers">
+					<h4>Let's Talk!</h4>
+					<p><span class="contact-email">E-mail:</span>clintlee@clintdevs.live</p>
+				</div>
 				<div class="contact-container">
 					<div class="contact-message">
 						<form action="https://formspree.io/clintlee@clintdevs.live" method="POST">
 							<div class="form-inputs">
 								<label class="hide" for="contact-message">Your Name</label>
-								<input id="name" placeholder="Jane" type="text" name="name">
+								<input id="name" placeholder="Jane" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Jane'" type="text" name="name">
 							</div>
 							<div class="form-inputs">
 								<label class="hide" for="contact-message">Your Email</label>
-								<input id="email" placeholder="info@janedoe.com" type="email" name="_replyto">
+								<input id="email" placeholder="info@janedoe.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'info@janedoe.com'" type="email" name="_replyto">
 							</div>
 							<div class="form-inputs">
 								<label class="hide" for="contact-message">Message</label>
-								<textarea placeholder="Hi! I'm Jane Doe. Let's work together!" name="textarea" id="message"></textarea>
+								<textarea placeholder="Hi! I'm Jane. Let's work together!" onfocus="this.placeholder = ''" onblur="this.placeholder = `Hi! I'm Jane. Let's work together!`" name="textarea" id="message"></textarea>
 							</div>
 							<div class="form-inputs">
 								<label class="hide" for="contact-message">Submit</label>
@@ -367,40 +373,9 @@
 		</section>
 	</main>
 	<footer>
-		<div class="wrapper">
-			<div class="contact-info">
-				<p class="contact-p">clintlee@clintdevs.live</p>
-			</div>
-			<div class="footer-icons">
-				<ul>
-					<li>
-						<a target="_blank" href="mailto:clintlee@clintdevs.live">
-							<i class="far fa-envelope"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.linkedin.com/in/clint-lee-8b869b158/">
-							<i class="fab fa-linkedin"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://twitter.com/clintldevs">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://github.com/Clintedd">
-							<i class="fab fa-github"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-divider"></div>
 		<div class="bottom">
 			<div class="copyright">
-				<p>Made by Clint Lee 2019 </p>
-				<p>Headshot by Pam Lau Logo by Will Parks</p>
+				<p>© Made by Clint Lee 2019 | Headshot by Pam Lau | Logo by Will Parks</p>
 			</div>
 		</div>
 	</footer>

@@ -159,7 +159,7 @@ h1 {
     text-align: center; } }
 
 .hero-korean {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', 'Nanum Gothic', sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -225,16 +225,12 @@ p {
     .menu-bar .menu-container .logo-container {
       width: 50px;
       margin: 10px 0; }
-    .menu-bar .menu-container nav ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .menu-bar .menu-container nav ul li {
-        list-style: none; }
-        .menu-bar .menu-container nav ul li a {
-          font-size: 2rem;
-          font-weight: 600;
-          color: #454545; }
+    .menu-bar .menu-container nav ul li {
+      list-style: none; }
+      .menu-bar .menu-container nav ul li a {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #454545; }
 
 header {
   background-image: url(../../assets/background.jpg);
@@ -252,15 +248,13 @@ header {
       width: 100%;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      color: #e0dfdc;
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      color: #ff4d62; }
       header .hero-wrapper .hero-name h2 {
-        color: #454545;
         font-size: 5rem; }
       header .hero-wrapper .hero-name h1 {
         margin: 0;
-        line-height: 1.4;
-        color: #454545; }
+        line-height: 1.4; }
 
 .arrow {
   position: absolute;
@@ -271,16 +265,18 @@ header {
   width: 75px;
   height: 65px; }
 
-.arrows:hover .arrow-all {
-  fill: #FFF;
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out; }
-  .arrows:hover .arrow-all.arrow-bottom {
-    -webkit-transform: translateY(-18px);
-            transform: translateY(-18px); }
-  .arrows:hover .arrow-all.arrow-top {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px); }
+.arrows {
+  max-width: 75px; }
+  .arrows:hover .arrow-all {
+    fill: #FFF;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out; }
+    .arrows:hover .arrow-all.arrow-bottom {
+      -webkit-transform: translateY(-18px);
+              transform: translateY(-18px); }
+    .arrows:hover .arrow-all.arrow-top {
+      -webkit-transform: translateY(18px);
+              transform: translateY(18px); }
 
 .arrow-all {
   fill: #FFF;
@@ -322,13 +318,74 @@ header {
   opacity: 1;
   width: 100%; }
 
-@media (max-width: 650px) {
-  .main-nav {
-    display: none; } }
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 650px) {
+    .main {
+      display: none; } }
 
-@media (min-width: 650px) {
-  .hamburger-icon {
-    display: none; } }
+.hidden {
+  display: none; }
+
+.responsive-nav {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  cursor: pointer; }
+  @media (min-width: 650px) {
+    .hamburger-menu {
+      display: none; } }
+
+.hamburger {
+  width: 50px;
+  height: 4px;
+  background: #454545;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: #454545;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+.hamburger:before {
+  top: 16px; }
+
+.hamburger:after {
+  top: -16px; }
+
+.hamburger-menu.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
+
+.hamburger-menu.active .hamburger:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0; }
+
+.hamburger-menu.active .hamburger:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0; }
 
 .clint {
   padding: 70px 0; }
@@ -340,7 +397,8 @@ header {
         justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    padding: 70px 0; }
     .clint .about-me-divider .about-me-img {
       padding-top: 50px;
       width: 20%;

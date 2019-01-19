@@ -2,7 +2,7 @@
 
 var app = {};
 
-//TypeIt javascript starts//
+//TypeIt JavaScript starts//
 
 
 app.headerName = new TypeIt('#typeName', {
@@ -22,7 +22,10 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
   loop: true
 });
 
-//TypeIt javascript ends//
+//TypeIt JavaScript ends//
+
+
+//smoothScroll JavaScript starts//
 
 app.smoothScroll = function () {
   // Select all links with hashes
@@ -58,8 +61,42 @@ app.smoothScroll = function () {
   });
 };
 
+//smoothScroll JavaScript ends//
+
+
+//responsiveNav JavaScript starts//
+
+// app.responsiveNav = () => {
+//   //if the width is less than 650px, display none the ul//
+//   // $('.main-nav').css("flex-direction", "column");
+//   let responsive = false;
+
+//   $('.dummy').click(function () {
+//     if (!responsive) {
+//       responsive = true;
+//       $('#main-nav').toggleClass('main');
+//       $('#main-nav').toggleClass('narrow');
+//     } else {
+//       responsive = false;
+//       // $('#main-nav').removeClass('hidden');
+//       // $('#main-nav').removeClass('narrow');
+//     }
+//   });
+// };
+
+app.burgerAnimate = function () {
+  $('.hamburger-menu').click(function () {
+    $('.hamburger-menu').toggleClass('active');
+  });
+};
+
+//responsiveNav JavaScript ends//
+
+
 app.init = function () {
   app.smoothScroll();
+  app.burgerAnimate();
+  app.hamburgerHide();
 };
 
 $(function () {

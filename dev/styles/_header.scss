@@ -3,7 +3,6 @@
 	width: 100%;
 	position: fixed;
 	z-index: 30;
-	// box-shadow: 2px 2px 2px 1px #ccc;
 
 	.menu-container {
 		display: flex;
@@ -223,4 +222,41 @@ header {
 .hamburger-menu.active .hamburger:after {
 	transform: rotate(135deg);
 	top: 0;
+}
+
+
+.hamburger-ul {
+	position: absolute;
+	right: 0%;
+	top: 61px;
+	background: rgba(240,240,240,0.9);
+	width: 60%;
+	height: 100vh;
+	padding: 60px;
+	display: none;
+	
+	@media (max-width:475px) {
+		width: 100%;
+	}
+	
+	li {
+		text-align: center;
+		padding: 40px 30px;
+		
+		a {
+			color: $fontgrey;
+			padding: 30px;
+			font-size: 3rem;
+			font-weight: 600;
+		}
+	}
+}
+
+.active-ul {
+	display: block;
+	transition: 0.5s;
+
+	@media (min-width: 650px) {
+		display: none;
+	}
 }

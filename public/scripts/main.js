@@ -66,38 +66,32 @@ app.smoothScroll = function () {
 
 //responsiveNav JavaScript starts//
 
-// app.responsiveNav = () => {
-//   //if the width is less than 650px, display none the ul//
-//   // $('.main-nav').css("flex-direction", "column");
-//   let responsive = false;
-
-//   $('.dummy').click(function () {
-//     if (!responsive) {
-//       responsive = true;
-//       $('#main-nav').toggleClass('main');
-//       $('#main-nav').toggleClass('narrow');
-//     } else {
-//       responsive = false;
-//       // $('#main-nav').removeClass('hidden');
-//       // $('#main-nav').removeClass('narrow');
-//     }
-//   });
-// };
-
 app.burgerAnimate = function () {
   $('.hamburger-menu').click(function () {
     $('.hamburger-menu').toggleClass('active');
+    $('.hamburger-ul').toggleClass('active-ul');
+  });
+};
+
+app.closeNav = function () {
+  $('.nav-item').click(function () {
+    $('.hamburger-menu').toggleClass('active');
+    $('.hamburger-ul').toggleClass('active-ul');
   });
 };
 
 //responsiveNav JavaScript ends//
 
+//app.init starts//
 
 app.init = function () {
   app.smoothScroll();
   app.burgerAnimate();
-  app.hamburgerHide();
+  app.closeNav();
 };
+
+//app.init ends//
+
 
 $(function () {
   AOS.init();

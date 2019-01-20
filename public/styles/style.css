@@ -387,6 +387,35 @@ header {
           transform: rotate(135deg);
   top: 0; }
 
+.hamburger-ul {
+  position: absolute;
+  right: 0%;
+  top: 61px;
+  background: rgba(240, 240, 240, 0.9);
+  width: 60%;
+  height: 100vh;
+  padding: 60px;
+  display: none; }
+  @media (max-width: 475px) {
+    .hamburger-ul {
+      width: 100%; } }
+  .hamburger-ul li {
+    text-align: center;
+    padding: 40px 30px; }
+    .hamburger-ul li a {
+      color: #454545;
+      padding: 30px;
+      font-size: 3rem;
+      font-weight: 600; }
+
+.active-ul {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  @media (min-width: 650px) {
+    .active-ul {
+      display: none; } }
+
 .clint {
   padding: 70px 0; }
   .clint .about-me-divider {

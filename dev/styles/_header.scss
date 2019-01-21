@@ -1,5 +1,5 @@
 .menu-bar {
-	background: #fff;
+	background: rgba(240,240,240,0.9);
 	width: 100%;
 	position: fixed;
 	z-index: 30;
@@ -215,12 +215,12 @@ header {
 }
 
 .hamburger-menu.active .hamburger:before {
-	transform: rotate(45deg);
+	transform: rotate(765deg);
 	top: 0;
 }
 
 .hamburger-menu.active .hamburger:after {
-	transform: rotate(135deg);
+	transform: rotate(855deg);
 	top: 0;
 }
 

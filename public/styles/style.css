@@ -208,7 +208,7 @@ p {
     font-size: 3rem; } }
 
 .menu-bar {
-  background: #fff;
+  background: rgba(240, 240, 240, 0.9);
   width: 100%;
   position: fixed;
   z-index: 30; }
@@ -378,13 +378,13 @@ header {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
 
 .hamburger-menu.active .hamburger:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(765deg);
+          transform: rotate(765deg);
   top: 0; }
 
 .hamburger-menu.active .hamburger:after {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -webkit-transform: rotate(855deg);
+          transform: rotate(855deg);
   top: 0; }
 
 .hamburger-ul {
@@ -457,8 +457,11 @@ header {
       .clint .about-me-divider .about-me-text .about-me-paragraph {
         border-radius: 5px;
         padding: 30px; }
+        @media (max-width: 650px) {
+          .clint .about-me-divider .about-me-text .about-me-paragraph {
+            padding: 10px; } }
         .clint .about-me-divider .about-me-text .about-me-paragraph p {
-          padding: 15px 0 10px 25px;
+          padding: 20px 0;
           font-size: 1.8rem; }
       .clint .about-me-divider .about-me-text .about-me-resume {
         display: -webkit-box;

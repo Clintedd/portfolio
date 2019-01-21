@@ -47,10 +47,14 @@
 			.about-me-paragraph {
 				border-radius: 5px;
 				padding: 30px;
+
+				@media (max-width: 650px) {
+					padding: 10px;
+				}
 				
 
 				p {
-					padding: 15px 0 10px 25px;
+					padding: 20px 0;
 					font-size: 1.8rem;
 				}
 			}

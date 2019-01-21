@@ -228,12 +228,12 @@ header {
 .hamburger-ul {
 	position: absolute;
 	right: 0%;
-	top: 61px;
+	top: -950px;
 	background: rgba(240,240,240,0.9);
 	width: 60%;
 	height: 100vh;
 	padding: 60px;
-	display: none;
+	transition: 0.5s ease-in-out;
 	
 	@media (max-width:475px) {
 		width: 100%;
@@ -253,8 +253,8 @@ header {
 }
 
 .active-ul {
-	display: block;
-	transition: 0.5s;
+	top: 61px;
+	transition: 0.5s ease-in-out;
 
 	@media (min-width: 650px) {
 		display: none;

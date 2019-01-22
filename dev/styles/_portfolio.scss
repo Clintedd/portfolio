@@ -28,8 +28,15 @@
 
       .portfolio-img {
         width: 40%;
-        min-width: 200px;
-        // max-width: 600px;
+        min-width: 400px;
+        border: 7px solid $teal;
+        transition: all 0.4s;
+      }
+
+      .portfolio-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 8px rgba(0,0,0,0.24);
+        border: 7px solid $pink;
       }
       
       .portfolio-text {
@@ -38,13 +45,11 @@
         border-radius: 10px;
         
         h3 {
-          // border-bottom: 2px solid $grey;
           padding: 15px 0;
         }
 
         .portfolio-about {
           width: 100%;
-          // padding: 30px;
           
           p {
             padding: 30px 0;
@@ -67,9 +72,9 @@
             font-weight: 900;
           }
         }
+
         .buttons {
           margin: 20px 0;
-          padding: 20px 0;
           display: flex;
           justify-content: flex-start;
           align-content: center;
@@ -78,7 +83,9 @@
             justify-content: flex-end;
 
             a:last-child {
-              margin-right:0;
+              @media (min-width: 410px) {
+                margin-right: 0;
+              }
             }
           }
 
@@ -116,16 +123,17 @@
           }
         }
       }
-
     }
-    
   }
-  .portfolio-wrapper:nth-child(odd) {
+
+  .portfolio-wrapper:nth-of-type(odd) {
     text-align: right; 
+
     .portfolio-container {
       flex-direction: row-reverse;
 
       .portfolio-text {
+
         .portfolio-skills {
           justify-content: flex-end;
           
@@ -135,50 +143,38 @@
         }
       }
     }
-
-
-   
-    
-  }
-  
+  } 
 }
 
 @media (max-width: 1362px) {
   .portfolio {
 
-  .portfolio-wrapper:nth-child(odd),
-  .portfolio-wrapper {
-    .portfolio-container {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+    .portfolio-wrapper:nth-child(odd),
+    .portfolio-wrapper {
 
-      .portfolio-img {
-        max-width: 300px;
-      }
-      
-      .portfolio-text {
-        width: 80%;
-        
-        h3 {
-          
+      .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .portfolio-img {
+          max-width: 300px;
         }
+        
+        .portfolio-text {
+          width: 80%;
 
-        .portfolio-skills {
-          display:flex;
-          justify-content: center;
-
-          p {
-            
+          .portfolio-skills {
+            display:flex;
+            justify-content: center;
           }
         }
       }
     }
+    .portfolio-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
   }
-  .portfolio-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
 }

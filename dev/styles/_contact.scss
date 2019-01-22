@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
   
-
   .contact-container {
     align-items: center;
 
@@ -35,6 +34,7 @@
             border-bottom: 1px solid $fontgrey;
           }
         }
+
         .form-inputs:nth-of-type(3) {
           width: 100%;
 
@@ -48,6 +48,7 @@
             height: 25vh;
           }
         }
+
         .form-inputs:last-child {
           margin: 0 auto;
           width: 180px;
@@ -95,7 +96,8 @@ input:focus, textarea:focus {
 .copyright {
 	width: 100%;
 	display: flex;
-	justify-content: center;
+  justify-content: center;
+  
 	p {
 		font-size: 1.8rem;
 		color: $white;

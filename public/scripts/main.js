@@ -4,7 +4,6 @@ var app = {};
 
 //TypeIt JavaScript starts//
 
-
 app.headerName = new TypeIt('#typeName', {
   strings: ['CLINT'],
   speed: 150,
@@ -23,7 +22,6 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
 });
 
 //TypeIt JavaScript ends//
-
 
 //smoothScroll JavaScript starts//
 
@@ -63,7 +61,6 @@ app.smoothScroll = function () {
 
 //smoothScroll JavaScript ends//
 
-
 //responsiveNav JavaScript starts//
 
 app.burgerAnimate = function () {
@@ -80,25 +77,6 @@ app.closeNav = function () {
   });
 };
 
-var active = false;
-
-app.resizeChecker = function () {
-  $(window).resize(function () {
-    if (window.innerWidth <= 650) {
-      active = true;
-    } else {
-      active = false;
-    }
-  });
-};
-
-app.activeChecker = function () {
-  if (!active) {
-    $('.hamburger-menu').removeClass('active');
-    $('.hamburger-ul').removeClass('active-ul');
-  }
-};
-
 //responsiveNav JavaScript ends//
 
 //app.init starts//
@@ -107,8 +85,6 @@ app.init = function () {
   app.smoothScroll();
   app.burgerAnimate();
   app.closeNav();
-  app.resizeChecker();
-  app.activeChecker();
 };
 
 //app.init ends//

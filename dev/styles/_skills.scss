@@ -88,29 +88,30 @@
 	}
 }
 
+.firebase-active,
+.premiere-active,
+.aftereffects-active {
+	transition: all 0.5s ease-in-out;
+}
+
 .firebase-active:hover path.largest-shape, 
 .firebase-active:hover path.bottom-line {
-	transition: all 0.5s ease-in-out;
 	fill: #FCCA3F;
 }
 
 .firebase-active:hover use.top-shape,
 .firebase-active:hover use.topleft-shape {
-	transition: all 0.5s ease-in-out;
 	fill: #FFA712;
 }
 
 .firebase-active:hover polygon.middle-triangle {
-	transition: all 0.5s ease-in-out;
 	fill: #F6820C;
 }
 
 .premiere-active:hover path.st1 {
-	transition: all 0.5s ease-in-out;
 	fill: #C35FD2;
 }
 
 .aftereffects-active:hover path.st1 {
-	transition: all 0.5s ease-in-out;
 	fill: #8F88D6;
 }

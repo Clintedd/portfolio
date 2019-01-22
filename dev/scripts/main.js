@@ -1,8 +1,6 @@
 const app = {};
 
-
 //TypeIt JavaScript starts//
-
 
 app.headerName = new TypeIt('#typeName', {
   strings: ['CLINT'],
@@ -22,8 +20,6 @@ app.headerNameKo = new TypeIt('#typeNameKo', {
 });
 
 //TypeIt JavaScript ends//
-
-
 
 //smoothScroll JavaScript starts//
 
@@ -68,7 +64,6 @@ app.smoothScroll = () => {
 
 //smoothScroll JavaScript ends//
 
-
 //responsiveNav JavaScript starts//
 
 app.burgerAnimate = () => {
@@ -85,28 +80,6 @@ app.closeNav = () => {
   })
 }
 
-let active = false;
-
-app.resizeChecker = () => {
-  $(window).resize(function() {
-    if (window.innerWidth <= 650) {
-      active = true;
-    }
-    else {
-      active = false;
-    }
-  })
-}
-
-app.activeChecker = () => {
-  if (!active) {
-    $('.hamburger-menu').removeClass('active');
-    $('.hamburger-ul').removeClass('active-ul');
-  }
-}
-
-
-
 //responsiveNav JavaScript ends//
 
 //app.init starts//
@@ -115,8 +88,6 @@ app.init = function() {
   app.smoothScroll();
   app.burgerAnimate();
   app.closeNav();
-  app.resizeChecker();
-  app.activeChecker();
 }
 
 //app.init ends//

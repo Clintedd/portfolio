@@ -37,6 +37,7 @@ header {
 	background-position: right;
 	transition: all 0.5s;
 	position: relative;
+	height: 100vh;
 
 	.hero-wrapper {
 		margin: 0 auto;
@@ -209,7 +210,7 @@ header {
 		a {
 			color: #ff4d62;
 			padding: 30px;
-			font-size: 3rem;
+			font-size: 3.5rem;
 			font-weight: 600;
 		}
 	}

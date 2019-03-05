@@ -10,9 +10,9 @@ app.headerName = new TypeIt('#typeName', {
 });
 
 app.headerNameKo = new TypeIt('#typeNameKo', {
-  strings: ['Web Developer', '웹 프로그래머'],
-  speed: 230,
-  deleteSpeed: 100,
+  strings: ['Web Developer', 'Vocalist', 'Drone Enthusiast', 'KBBQ Master'],
+  speed: 150,
+  deleteSpeed: 50,
   cursor: false,
   breakLines: false,
   startDelay: 3000,
@@ -82,12 +82,21 @@ app.closeNav = () => {
 
 //responsiveNav JavaScript ends//
 
+//displayNone JavaScript starts
+
+app.displayNone = function() {
+  // $('.ti-cursor').css('display', 'none');
+}
+
+//displayNone JavaScript ends
+
 //app.init starts//
 
 app.init = function() {
   app.smoothScroll();
   app.burgerAnimate();
   app.closeNav();
+  app.displayNone();
 }
 
 //app.init ends//

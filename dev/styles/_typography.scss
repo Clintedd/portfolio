@@ -4,11 +4,7 @@ html {
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
-}
-
-h1 {
-	font-size: 9rem;
+	font-family: 'Lato', sans-serif;
 }
 
 .hero-name {
@@ -18,16 +14,20 @@ h1 {
 }
 
 .hero-korean {
-	font-family: 'Raleway', 'Nanum Gothic', sans-serif;
+	font-family: 'Cabin Sketch', sans-serif;
 	font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Raleway', sans-serif;
+h1 {
+	font-family: 'Cabin Sketch', sans-serif;
+	font-size: 10rem;
+	font-weight: bold;
 }
 
 h2 {
-	font-size: 6rem;
+	font-family: 'Cabin Sketch', sans-serif;
+	font-size: 7rem;
+	font-weight: bold;
 }
 
 h3 {

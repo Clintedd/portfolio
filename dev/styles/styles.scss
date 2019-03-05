@@ -42,9 +42,9 @@ p {
 .subheader-container {
 	
 	h2 {
-		border-left: 3px solid $teal;
+		border-left: 3px solid #42372e;
 		margin-bottom: 30px;
-		color: $fontgrey;
+		color: #605f51;
 		z-index: 10;
 		padding-left: 40px;
 	}
@@ -54,6 +54,9 @@ p {
 	display: none;
 }
 
+main {
+	overflow-x: hidden;
+}
 
 
 

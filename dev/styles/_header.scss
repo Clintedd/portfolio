@@ -23,7 +23,7 @@
 					font-size: 2rem;
 					// padding: 10px;
 					font-weight: 600;
-					color: #ff4d62;
+					color: #605f51;
 				}
 			}
 		}
@@ -38,21 +38,26 @@ header {
 	transition: all 0.5s;
 	position: relative;
 	height: 100vh;
+	z-index: 1;
 
 	.hero-wrapper {
 		margin: 0 auto;
+		display: flex;
+		height: 100%;
+		align-items: center;
+
+		@media (max-width: 450px) {
+			padding-top: 200px;
+			align-items: flex-start;
+		}
 
 		.hero-name {
-			padding: 250px 0 550px;
 			margin: 0 auto;
 			width: 100%;
 			transition: all 0.5s;
 			letter-spacing: .1rem;
-			color: #ff4d62;
-
-			h2 {
-				font-size: 5rem;
-			}
+			color: #605f51;
+			transform: translateX(20px);
 
 			h1 {
 				margin: 0;
@@ -60,6 +65,10 @@ header {
 			}
 		}
 	}
+}
+
+.ti-cursor {
+	display: none;
 }
 
 .arrow {
@@ -208,7 +217,7 @@ header {
 		padding: 40px 30px;
 		
 		a {
-			color: #ff4d62;
+			color: #605f51;
 			padding: 30px;
 			font-size: 3.5rem;
 			font-weight: 600;
